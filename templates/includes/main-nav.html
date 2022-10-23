@@ -14,13 +14,13 @@
 
         <li class="nav-item dropdown">
             <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="clothing-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                GYM Gear
+                Gym Gear
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="clothing-link">
-                <a href="" class="dropdown-item">Activewear &amp; Essentials</a>
-                <a href="" class="dropdown-item">Protein Shakes</a>
-                <a href="" class="dropdown-item">GYM Equipment</a>
-                <a href="" class="dropdown-item">GYM-GEEK Clothing</a>
+                <a href="{% url 'products' %}?category=activewear,essentials" class="dropdown-item">Activewear &amp; Essentials</a>
+                <a href="{% url 'products' %}?category=protein_shakes" class="dropdown-item">Protein Shakes</a>
+                <a href="{% url 'products' %}?category=Gym_Equipment" class="dropdown-item">Gym Equipment</a>
+                <a href="{% url 'products' %}?category=activewear,essentials,leggings,socks" class="dropdown-item">GYM-GEEK Clothing</a>
             </div>
         </li>
 
@@ -29,8 +29,8 @@
                 About Us
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="homeware-link">
-                <a href="" class="dropdown-item">See our locations</a>
-                <a href="" class="dropdown-item">Meet Our Team</a>
+                <a href="{% url 'products' %}?category=location"  class="dropdown-item">See our locations</a>
+                <a href="{% url 'products' %}?category=Meet_our_team"  class="dropdown-item">Meet Our Team</a>
                 <a href="" class="dropdown-item">Classes</a>
             </div>
         </li>
@@ -40,9 +40,9 @@
                 Special Offers
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="specials-link">
-                <a href="" class="dropdown-item">New Arrivals</a>
-                <a href="" class="dropdown-item">Deals</a>
-                <a href="" class="dropdown-item">Clearance</a>
+                <a href="{% url 'products' %}?category=new_arrivals" class="dropdown-item">New Arrivals</a>
+                <a href="{% url 'products' %}?category=deals"  class="dropdown-item">Deals</a>
+                <a href="{% url 'products' %}?category=clearance"  class="dropdown-item">Clearance</a>
             </div>
         </li>
     </ul>
