@@ -1,108 +1,93 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# GymGeeks
 
-Welcome healygi,
+# Other Technologies
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+- Cloudinary was used to host the static files and media
+- Gitpod as the IDE
+- Git used for version control via the terminal in Gitpod
+- GitHub used to store the code in the repository
+- Heroku was used as the cloud based platform for deployment
+- Fontawesome for icons
+- Google images for images
+- Lucid for wireframes
+- Google Chrome Dev Tools for inspection during development to check reponsiveness and contrast.
+- Favicon.io for the favicon
+- W3C Markup Validation Service
+- W3C CSS Validation Service(Jigsaw) 
+- PEP8 Online Checker
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+# Agile Development Methology:
 
-## Gitpod Reminders
+ - I documented and implemented all User Stories using the Agile Project Management tools on GitHub. 
+ - I created a basic kanban board in the projects section of my git-hub repository.
+ - Here I created User Stories using the CI template - AS A - I WANT - SO THAT. 
+ - I linked them with my project and moved them into the to do section of my kanban board.
+ - I labelled my User Stories in accordance with MoSCow prioritization.  
+ - I researched and asked friends and family who had an interest in health what they would want from a health blog site. 
+ - I asked them to write some User Stories to see if they came up with ones I hadn't thought of. 
+ - I kept my site simple to ensure all the functionality ran smoothly and efficiently, keeping continious attention to technical proficiency. 
+ - To start, I chose between one - three 'Must Have' user stories and moved them into the 'in progress' board and continued from there, starting with the 'must have' stories first with some others that over-lapped moving on to the 'should have' and then 'could have' depending on my time frame and scope. 
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+![kanban board](/media/PP4/kanban_board.png) 
 
-`python3 -m http.server`
+# Scope
 
-A blue button should appear to click: _Make Public_,
+The scope of this project was large at the planning stage. The ultimate goal was to allow logged in users to have full CRUD functionality for all their own content. Time constraints meant this was limited to CRUD functionality for logged in users only for their own comments on blog posts as this was deemed a must-have. More functionality for logged in users will be added in the future. For instance, I would like to add the ability for the user to submit a blog post they have written that is then submitted to be approved by the site owner. 
 
-Another blue button should appear to click: _Open Browser_.
+# Structure
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+The site consists of 6 pages: Home, Sign-up/Sign-in, Blog Posts (x3 currently). All pages can be viewed by all users. The ability to comment/like posts is limited to logged in users. 
 
-A blue button should appear to click: _Make Public_,
+# Epics and User Stories
+ - I had 8 Epics:
 
-Another blue button should appear to click: _Open Browser_.
+ 1. Epic: Set up admin page for admin to manage blog posts, comments and site users. 
+ 2. Epic: Enable users to set up an account on the site to have full access to features. 
+ 3. Epic: Create eye-catching home page. 
+ 4. Epic: Enable registered users to comment/like/edit/delete posts. 
+ 5. Epic: Create Blog page for users to read blog posts. 
+ 6. Epic: Enable registered users to interact with blog posts to enhance UX and engagement with other users.
+ 7. Epic: Enable users to sign-in/register with Facebook account. 
+ 8. Epic: Enable users to CRUD own comments.  
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+ - I had 19 User Stories in total and moved them in accordance with whether they were in progress or completed. Here are my User Stories:
 
-To log into the Heroku toolbelt CLI:
+           - As a *user/admin* I want to be able to register an account and *sign up/in* to the website. (must-have/completed) 
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+           - As a *user/admin* I want to be able to view comments in order to be able to *read/view comments.* (must-have/completed)
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+           - As a *user/admin* I want to be able to open posts in order to be able to *read/view them* (must-have/completed)
 
-------
+           - As a *user/admin* I want to be able to read excerpts of the posts on the home page to *improve UX design and get a taste of what the article is about* (should-have/completed)
 
-## Release History
+           - As a *user/admin* I want to be able to view posts so that I can see *how many likes a post gets* (must-have/completed)
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+           - As a *site owner* I want to be able to create drafts of my posts and recieve posts from users so that *I can review, schedule and draft posts before posting.* (must-have/completed)
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+           - As a *site owner* I want to be able to *like & comment on blog posts including my own so that I can engage with my users/community.* (must-have/completed)
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+           - As a *site owner*  I want to be able to *give my clients(users) feedback on their session with me and homework/nutrition plan if needed so that there is clear connection and organisation between client & nutritionist.* (could-have/future feature)
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+           - As a *site owner*  I want to be able to *login & see my schedule & clients so that everything is organised and readable* (could-have/future feature)
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+           - As a *site owner* I want my *booking system to be adjustable and follow my schedule/diary so that it is organised with accordance to my schedule* (could-have/future feature)
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+           - As a *site owner*  I want to be able to *receive bookings and make sure there are no double bookings so that I can set up meetings with my users* (could-have/future feature)
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+           - As a *site owner*  I want to be able to *vet comments before posting so that abusive/poor comments aren't posted.* (must-have/completed)
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+           - As a *site owner*  I want to be able to *post to my blog so that my users can engage and read my content* (must-have/completed)
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+           - As a *User* I want the ability to sign in/out so that I can *have access to the full features of the site* (must-have/completed)
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+           - As a *User* I want the ability to sign in/out via Facebook so that I can *streamline my account* (could-have/completed)
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+           - As a *User* I want the ability to *book an appointment with a nutritionist so that I can get help & advice with my health issues* (could-have/future feature)
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+           - As a *User* I want the ability to *read blogs so that I can learn about nutrition & health* (must-have/completed)
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+           - As a *User* I want the ability to *like posts so that I can engage with others* (should-have/completed)
+           
+           - As a *User*, I want the ability to *comment and delete and edit posts so that manage my own content* (must-have/completed)
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
-
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
-
-------
-
-## FAQ about the uptime script
-
-**Why have you added this script?**
-
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
-
-**How will this affect me?**
-
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
-
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
-
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
-
-**So….?**
-
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
-
-**Can I opt out?**
-
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
-
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
-
-**Anything more?**
-
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
-
----
-
-Happy coding!
+ - I labelled them with MoSCow prioritization so that this allowed me to prioritise certain tasks to implement over less important tasks depending on time and scope. 
