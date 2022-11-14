@@ -140,4 +140,18 @@ The site consists of 6 pages: Home, Sign-up/Sign-in, shop (x3 currently). All pa
            
            - As a Site User I want the ability to view my profile so that I can **see my account details **
 
+           - As a Site User I want the ability to Easily register for an account so that I can **have a personal account **
+
+           - As a shopper I want the ability to learn more about GymGeeks so that I can get an incite to the company
+
+           - As a shopper I want the ability to navigate clearly through the site so that I can have a good user experience
+
+           - As a shopper I want the ability to easily view the total of my purchases at any time so that I can avoid spending past my budget
+
+           - As a shopper I want the ability to quickly identify deals, clearance items and special offers so that I can take advantage of special savings on products I'd like to purchase
+
+           - As a shopper I want the ability to view products individually so that I can Identify the price, description, product rating, image and potentially sizes available
+
+           - As a shopper I want the ability to view a list of products so that I can select some to purchase
+
  - I labelled them with MoSCow prioritization so that this allowed me to prioritise certain tasks to implement over less important tasks depending on time and scope. 
