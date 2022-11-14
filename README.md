@@ -100,7 +100,7 @@ The site consists of 6 pages: Home, Sign-up/Sign-in, shop (x3 currently). All pa
  7. Epic: Set up Facebook Business Page to enable users to make contact with each other and engage in a community where they can view fitness posts/offers from GymGeeks. 
  8. Epic: Enable admin to be able to use full CRUD functionality on the site itself after account registration.  
 
- - I had 22 User Stories in total and moved them in accordance with whether they were in progress or completed. Here are my User Stories:
+ - I had 27 User Stories in total and moved them in accordance with whether they were in progress or completed. Here are my User Stories:
 
            - As a Shopper I want the ability to book a class on the site so that I can make sure to get my slot and see what timetable classes are available on a weekly basis
 
