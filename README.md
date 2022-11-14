@@ -118,26 +118,26 @@ The site consists of 6 pages: Home, Sign-up/Sign-in, shop (x3 currently). All pa
 
            - As a Shopper I want the ability to Search for a product by name or description so that I can find a specific product I'd like to purchase
 
-           - As a *site owner*  I want to be able to *login & see my schedule & clients so that everything is organised and readable* (could-have/future feature)
+           - As a Shopper I want the ability to sort through multiple categories of products simultaneously so that I can find the best priced or rated products across broad categories such as 'active wear' or 'gym equipment'
 
-           - As a *site owner* I want my *booking system to be adjustable and follow my schedule/diary so that it is organised with accordance to my schedule* (could-have/future feature)
+           - As a Shopper I want the ability to sort through multiple categories of product so that I can find the best priced or rated in a specific category or sort the products in that category by name
 
-           - As a *site owner*  I want to be able to *receive bookings and make sure there are no double bookings so that I can set up meetings with my users* (could-have/future feature)
+           - As a Shopper I want the ability to sort through a specific category by name so that I can select the category I want and view only items in this category
 
-           - As a *site owner*  I want to be able to *vet comments before posting so that abusive/poor comments aren't posted.* (must-have/completed)
+           - As a Shopper I want the ability to search through a specific category of products so that I can find the best-priced or best-rated product in a specific category
 
-           - As a *site owner*  I want to be able to *post to my blog so that my users can engage and read my content* (must-have/completed)
+           - As a shopper I want the ability to sort and filter through the list of available products so that I can easily identify the best rated, best priced and separate categories
 
-           - As a *User* I want the ability to sign in/out so that I can *have access to the full features of the site* (must-have/completed)
+           - As a Site User I want the ability to have a personalised user profile so that I can view my personal order history and order confirmations and save my payment information
 
-           - As a *User* I want the ability to sign in/out via Facebook so that I can *streamline my account* (could-have/completed)
+           - As a Site User I want the ability to receive email confirmation after registering my account* so that I can verify my account registration was successful
 
-           - As a *User* I want the ability to *book an appointment with a nutritionist so that I can get help & advice with my health issues* (could-have/future feature)
+           - As a Site User I want the ability to recover & reset my password so that I can **recover access to my account **
 
-           - As a *User* I want the ability to *read blogs so that I can learn about nutrition & health* (must-have/completed)
+           - As a Site User I want the ability to Easily login and out so that I can **have security and access my personal account information **
 
-           - As a *User* I want the ability to *like posts so that I can engage with others* (should-have/completed)
+           - AAs a Site User I want the ability to view my profile so that I can **view my order history **
            
-           - As a *User*, I want the ability to *comment and delete and edit posts so that manage my own content* (must-have/completed)
+           - As a Site User I want the ability to view my profile so that I can **see my account details **
 
  - I labelled them with MoSCow prioritization so that this allowed me to prioritise certain tasks to implement over less important tasks depending on time and scope. 
