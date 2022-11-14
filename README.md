@@ -102,21 +102,21 @@ The site consists of 6 pages: Home, Sign-up/Sign-in, shop (x3 currently). All pa
 
  - I had 22 User Stories in total and moved them in accordance with whether they were in progress or completed. Here are my User Stories:
 
-           - As a *user/admin* I want to be able to register an account and *sign up/in* to the website. (must-have/completed) 
+           - As a Shopper I want the ability to book a class on the site so that I can make sure to get my slot and see what timetable classes are available on a weekly basis
 
-           - As a *user/admin* I want to be able to view comments in order to be able to *read/view comments.* (must-have/completed)
+           - As a Shopper I want the ability to read about GymGeek staff so that I can get a feel for who GymGeek are and what they offer
 
-           - As a *user/admin* I want to be able to open posts in order to be able to *read/view them* (must-have/completed)
+           - As a Shopper I want the ability to purchase a subscription to gym classes/membership so that I can easily sign up to GymGeek classes or membership
 
-           - As a *user/admin* I want to be able to read excerpts of the posts on the home page to *improve UX design and get a taste of what the article is about* (should-have/completed)
+           - As a Admin I want the ability to easily delete/edit products* so that I can easily set up my site
 
-           - As a *user/admin* I want to be able to view posts so that I can see *how many likes a post gets* (must-have/completed)
+           - As a Shopper I want the ability to easily select the quantity* so that I can ensure I don't accidentally select the wrong quantity
 
-           - As a *site owner* I want to be able to create drafts of my posts and recieve posts from users so that *I can review, schedule and draft posts before posting.* (must-have/completed)
+           - As a Shopper I want the ability to easily select the size* so that I can ensure I don't accidentally select the wrong product size
 
-           - As a *site owner* I want to be able to *like & comment on blog posts including my own so that I can engage with my users/community.* (must-have/completed)
+           - As a Shopper I want the ability to Easily see what I have searched for and the number of results so that I can quickly decide whether the product I want is available
 
-           - As a *site owner*  I want to be able to *give my clients(users) feedback on their session with me and homework/nutrition plan if needed so that there is clear connection and organisation between client & nutritionist.* (could-have/future feature)
+           - As a Shopper I want the ability to Search for a product by name or description so that I can find a specific product I'd like to purchase
 
            - As a *site owner*  I want to be able to *login & see my schedule & clients so that everything is organised and readable* (could-have/future feature)
 
