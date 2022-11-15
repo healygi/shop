@@ -277,6 +277,10 @@ input[name='q']::placeholder {
     border-radius: 0;
 }
 
+.footer {
+    color: black;
+}
+
 
 /* fixed top navbar only on medium and up */
 @media (min-width: 992px) {
