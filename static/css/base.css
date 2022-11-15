@@ -8,6 +8,9 @@ body {
     height: calc(100vh - 164px);
     background-color: #555;
     font-family: 'Lato';
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 .main_text {
@@ -279,6 +282,7 @@ input[name='q']::placeholder {
 
 .footer {
     color: black;
+    margin-top: auto;
 }
 
 
