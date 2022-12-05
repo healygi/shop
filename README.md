@@ -114,7 +114,7 @@ The site consists of 6 pages: Home, Sign-up/Sign-in, shop (x3 currently). All pa
 
            - As a Shopper I want the ability to easily select the size* so that I can ensure I don't accidentally select the wrong product size
 
-           - As a Shopper I want the ability to Easily see what I have searched for and the number of results so that I can quickly decide whether the product I want is available
+           - As a Shopper I want the ability to easily see what I have searched for and the number of results so that I can quickly decide whether the product I want is available
 
            - As a Shopper I want the ability to Search for a product by name or description so that I can find a specific product I'd like to purchase
 
@@ -136,7 +136,7 @@ The site consists of 6 pages: Home, Sign-up/Sign-in, shop (x3 currently). All pa
 
            - As a Site User I want the ability to Easily login and out so that I can **have security and access my personal account information **
 
-           - AAs a Site User I want the ability to view my profile so that I can **view my order history **
+           - As a Site User I want the ability to view my profile so that I can **view my order history **
            
            - As a Site User I want the ability to view my profile so that I can **see my account details **
 
@@ -155,3 +155,157 @@ The site consists of 6 pages: Home, Sign-up/Sign-in, shop (x3 currently). All pa
            - As a shopper I want the ability to view a list of products so that I can select some to purchase
 
  - I labelled them with MoSCow prioritization so that this allowed me to prioritise certain tasks to implement over less important tasks depending on time and scope. 
+
+# Testing
+
+## Manual Testing:
+
+ - I chose to manually test my project as my app is small and not so complicated. If my project was bigger and if I decide to continue with developing this app further I would consider automated testing as manual testing for a larger project has a high error rate and probably would not suffice by itself. For this project I believe manual testing was all that was needed. 
+
+ - I began my manual testing by checking that my project works according to user stories, this is known as BDD - Behaviour Driven Development where the result is based on an expected outcome. This type of testing bulids from user stories where I would sit in front of my app and test it to see if it behaves as expected. Similar to user story template - AS - I WANT - SO THAT - I created a number of atomic tests by using the template - GIVEN - WHEN - THEN. This template describes the outcome in a testable way. 
+ 
+ ## Atomic Tests
+ 
+ - My tests were written for both the user and admin. They read as follows:
+
+          -  AS a *Site User* I WANT the ability to receive email confirmation after registering my account* SO THAT I can verify my account registration was successful
+
+           - AS a *Site User* I WANT the ability to recover & reset my password SO THATI can **recover access to my account **
+
+           - AS a *Site User* I WANT the ability to easily login and out SO THAT I can **have security and access my personal account information **
+
+           - AS a *Site User* I WANT the ability to view my profile SO THAT I can **view my order history **
+           
+           - AS a *Site User* I WANT the ability to view my profile SO THAT I can **see my account details **
+
+           - AS a *Site User* I WANT the ability to easily register for an account SO THAT I can **have a personal account**
+
+           - AS a *shopper* I WANT the ability to learn more about GymGeeks SO THAT I can gain insight to the company
+
+           - AS a *shopper*  I WANT the ability to navigate clearly through the site SO THAT I can have a good user experience
+
+           - AS a*shopper*  I WANT the ability to easily view the total of my purchases at any time SO THAT I can avoid spending past my budget
+
+           - AS a *shopper*  I WANT the ability to quickly identify deals, clearance items and special offers SO THAT I can take advantage of special savings on products I'd like to purchase
+
+           - AS a *shopper*  I WANT the ability to view products individually SO THATI can Identify the price, description, product rating, image and potentially sizes available
+
+           - AS *shopper* I WANT the ability to view a list of products SO THAT I can select some to purchase
+
+
+ ## Example of running Atomic Test:
+
+ - User Story:
+
+
+   - AS A *User* I WANT *the ability to easily view the total of my purchases at any time* SO THAT *I can avoid spending past my budget*
+   - AS A *User*  I WANT *the ability to sort through a specific category by name* SO THAT *I can select the category I want and view only items in this category*
+
+   - GIVEN *That a user is on any site page* WHEN *the user has added an item to the bag* THEN *The user is able to see the total cost of their basket*
+   - GIVEN *That a user is on any site page* WHEN *the user has typed in their specific category into the search bar* THEN *The user is able to naviagate directly to their desired product if available*
+
+ - Testing Steps:
+
+  1. I navigate to GYMGEEKS site
+  2. I am on the product page
+  3. I click on a product and add it to the basket
+
+ - Expected Result: 
+
+   - The basket icon in the corner of the top right screen turns blue and the amount of the added item is visible - informing the user of how much their basket is costing. 
+
+ - Actual Result:
+
+   - The basket turns blue, the item is added to cart and the number increasing according to the price of the porduct/products. 
+
+- Pass or Fail:
+   
+   - Atomic test *passes* because expected result matches actual result. 
+
+- I went through each User Story following the template above and accounted for whether the test failed or passed in conjunction with my GIVEN-WHEN-THEN template. If it passed my test was valid and I could move on to the next one. If it failed I had to go back to development and resolve the issue.  
+
+## Other Forms of Testing
+ 
+- I tested if my project worked on different browsers such as - Google Chrome, Safari, Microsoft Edge and Firefox - with different resolutions. 
+
+- I tested if my project was responsive on a number of different devices- mobile, tablets, desktops from 320px to 1201px. I used developer tools to make sure my site works on all device sizes. 
+
+- I sent my deployed link to friends and family to double check that it worked adequately on all different types of screens.
+
+- I tested my site on the website - responsive design checker- which ran my site through a variety of different screen sizes and devices. I inspected each one and was happy with the level of responsivity.
+
+- I tested my site in dev tools lighthouse and was happy with the result:
+
+ ![lighthouse](/media/PP4/lighthouse.png) 
+
+
+## Validator Testing 
+
+- HTML
+   - No errors were returned when passing through the official W3C validator
+
+- CSS
+   -  No errors were returned when passing through the official Jigsaw validator
+
+- Python
+   - No errors were returned when passing through the PEP8 online check. 
+
+- Javascript 
+   - No errors were returned 
+
+   ![html-validator](/media/PP4/validator.png) 
+
+## Unfixed Bugs
+
+- I had a lot of errors when I attempted to set up my facebook business account. I made 3 separate social media accounts to create this page but facebook kept blocking it after a few minutes.  
+
+## UX Design 
+
+- I implemented UX design when developing my project. I did so by putting myself in the users shoes and designed the site based on their needs. This site is for users interesed in exercise and health. It is targeted towards a user who wants to join a community for improving their fitness but also the ability to purchase active wear and gym equipment/classes - so it is an all in one gym.
+- I viewed other gym and health websites to gain inspriation on what design fits best for this type of website. 
+- I made sure my site was accessible by making sure all text is readable and that there is a right amount of contrast between colours. 
+- I selected the colour pallet yellow, black and white as I thought it reflected strength and agility colours which would be assoicated with fitness and energy. These hard colours are strong and inviting but also smart and serious. 
+- I made sure my site was simple as a design principle for an ease in terms of user experience. 
+- I selected a simple readable, pleasing font to make sure my text was easily and quickly readable. 
+- I provided ease of navigation so that the user can go back and forth between the homepage, browse merchandise, basket/checkout and profile. I also provided the ability for the user to have their own profile so that they can 
+- I created a favicon icon with the intials of my site 'GG'. I used an eyecatching font and stuck with the pallet of my site.
+- I created a wireframe of my project prior to creating it, this wireframe allowed me to have a simple basis of what I developing and how it should look. 
+
+## Wireframe 
+
+![wireframe](/media/PP4/wireframe.png) 
+
+## Final Project
+
+![final project](/media/PP4/Home.png) 
+
+- As you can see my design basically stayed the same but with a better color pallet and navigation placed beside a nicer designed 'workout' stamp on the homepage. 
+- I also provided a 'shop now' button template and short detail of the site along with examples of what the shop/basket would look like. 
+
+# Deployment 
+
+I took the following steps to begin my deployment:
+
+1. I installed Django and the supporting libraries.
+2. I created a new blank Django project and app.
+3. I set my project to use Cloudinary (where my images would be stored) and PostgreSQL (relational database management system). 
+4. Deployment came into difficulty when Heroku stopped offering free accounts and so I had apply for a student gitpod starter pack and export my older projects data to ElephantSQL. Luckily I had not deployed my PP5 by this point so I did not have to migrate my files to a new database. ElephantSQL was all hooked up before I began deployment.
+5. I created an app named 'GymGeeks' and gave it the location - 'Europe.'
+5. By following the steps outlines by Code Institute I added ElephantSQL as my database in the Resources tab of my app - I migrated my older data from Postgres to ElephantSQL. 
+6. I copied the DATABASE_URL from my Config Vars and added it to my env.py file to link my new database_url with my Heroku app.
+7. I created my SECRET_KEY in my environ.py file to encrypt session cookies and added this to my Heroku app config vars.
+8. I then imported dj_database_url, os and added my SECRET_KEY and DATABASES to my settings.py file.
+9. I migrated my files. 
+10. I created a Cloudinary account to store my images- I linked this URL to my env.py file and my Heroku app config vars.
+11. In my settings.py file I added 'cloudinary_storage' and the cloudinary library to my INSTALLED_APPS.
+12. After linking Django to Cloundinary, adding my Templates Directory, creating my three directories - media, static and templates, adding a Procfile (web: gunicorn gymgeeks.wsgi) and adding my heroku app to ALLOWED_HOSTS in my settings.py file- I was then ready to make my first deployment to Heroku. 
+13. In the deployment tab of my app I connected GitHub to my deployment method. 
+14. I then connected my app to my GitHub repository and deployed it to my main branch. 
+15. I watched the buliding log and when it was complete I selected 'open app' and my app successfully deployed. 
+16. On final deployment I set "DEBUG = False". 
+
+# Credits
+
+- Thank you to friends and family for putting up with me through the last rounds of this diploma. 
+- Thank you to my mentor for his guidance. 
+
