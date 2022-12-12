@@ -10,30 +10,27 @@
 {% endblock %} 
 
 {% block content %} 
-     <div class="container h-100 main_text">
+     <div class="container">
+          <img src="/media/workout_txt.png" class="rounded" style="display: flex;" alt="Responsive image">
           <div class="row">
                <div class="col-7 col-md-6 my-auto">
-                    <h1 class="display-4 logo-font text-black">
+                    <h1 class="display-4 logo-font text-black" style="padding-bottom: 30px;">
                         We are more than just a Gym...<br>
-                        &nbsp;
+                        <h4>
+                         <a href="{% url 'products' %}" class="shop-now-button btn btn-lg rounded-0 text-uppercase py-3">Shop Now</a>
+                        </h4>
                         <h5>Train & Gain - one stop shop and training center</h5>
                     </h1>
-                    <div class="my-5">
-                         <h4>
-                              <a href="{% url 'products' %}" class="shop-now-button btn btn-lg rounded-0 text-uppercase py-3">Shop Now</a>
-                         </h4>
-                    </div>
                </div>
-               <img src="/media/workout_txt.png" class="rounded float-right img-fluid" style="width: 40%; position: relative" alt="Responsive image">
           </div>
      </div>
    
      <footer class="bg-black text-center text-white footer fixed-bottom">
           <!-- Grid container -->
-          <div class="container p-4 pb-0">
-               <p>GymGeeks &nbsp;<i class="fas fa-dumbbell"></i></p>
+          <div class="container" style="padding-top: 5px;">
+               <!-- <p>GymGeeks &nbsp;<i class="fas fa-dumbbell"></i></p> -->
             <!-- Section: Social media -->
-            <section class="mb-4">
+            
               <!-- Facebook -->
               <a class="btn btn-outline-light btn-floating m-1 btn-sm" href="https://www.facebook.com/" target="_blank" role="button"
                 ><i class="fab fa-facebook-f"></i
@@ -52,8 +49,8 @@
               <p>Keep up to date with all our latest offers</p>
               <a href="#" target="_blank"><i class="fab fa-facebook-square"></i> Follow us on Facebook!</a>
 
-            </section>
-               <h6>Location &nbsp;<i class="fas fa-location-arrow fa-xs"></i></h6>1 Peel Road, Golden Lane, Dublin 8, D08A4B3</p>
-          </div>
+           
+               <!-- <h6>Location &nbsp;<i class="fas fa-location-arrow fa-xs"></i></h6>1 Peel Road, Golden Lane, Dublin 8, D08A4B3</p>
+          </div> -->
         </footer>
 {% endblock %}

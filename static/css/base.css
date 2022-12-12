@@ -285,6 +285,25 @@ input[name='q']::placeholder {
     margin-top: auto;
 }
 
+.rounded {
+    width: 50%;
+    position: fixed;
+    margin-left: 300px;
+    margin-top: 0px;
+    margin-bottom: 100px;
+    padding: 50px;
+}
+
+/* .responsive {
+    width: 100%;
+    height: auto;
+} */
+ 
+.image-container {
+    position: fixed;
+    margin-top: 0px;
+}
+
 
 /* fixed top navbar only on medium and up */
 @media (min-width: 992px) {
