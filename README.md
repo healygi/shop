@@ -60,6 +60,7 @@ GymGeeks is an all in one gym shop and training centre. GymGeeks offers a wide v
 - Fontawesome for icons
 - Google images & Pexel for images
 - Lucid for wireframes
+- Canva for Facebook Business Mock-up
 - Google Chrome Dev Tools for inspection during development to check reponsiveness and contrast.
 - Favicon.io for the favicon
 - W3C Markup Validation Service
@@ -274,6 +275,12 @@ The site consists of 6 pages: Home, Sign-up/Sign-in, shop (x3 currently). All pa
 ## Wireframe 
 
 ![wireframe](/media/PP4/wireframe.png) 
+
+## Facebook Business Page
+
+![Facebook-Mockup](/media/facebook.png) 
+
+- I implemented a mock up of a Facebook business page. I attempted to create an account numerous times but it kept getting shut down due to Facebook security so in the end I created a mock up in Canva to envision what GymGeeks business page would look like. I placed the logo 'workout' stamp as the icon/slogan and implemented it on the image of Facebook posts. I implemented it as such to keep the flow of the page and my site, linking it with the 'workout' stamp. I thought if it was used and placed regularly it would make my site more marketable and recognizsable. I envision this page to be a hub for community amongst GymGeek users. For users to find gym offers, subscriptions, classes or active-wear deals.  
 
 ## Final Project
 
