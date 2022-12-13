@@ -29,7 +29,7 @@ GymGeeks is an all in one gym shop and training centre. GymGeeks offers a wide v
    - The footer sticks to the bottom of the page and is located on every page of this site. 
 
    
-![footer](/media/PP4/footer.png) 
+![footer](/media/footer.jpg) 
 
 - Register 
 
