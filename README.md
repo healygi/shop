@@ -13,7 +13,7 @@ GymGeeks is an all in one gym shop and training centre. GymGeeks offers a wide v
    - The logo 'GymGeeks' is also a clickable link to the homepage. This allows for easy navigation when the user views the site on a mobile or tablet device. 
 
   
-![nav bar](/media/PP4/nav.png) 
+![nav bar](/media/navbar.png)) 
 
 - Home
 
@@ -21,7 +21,8 @@ GymGeeks is an all in one gym shop and training centre. GymGeeks offers a wide v
 
    
 ![homepage](/media/PP4/Home.png) 
-
+   
+![homepage](/media/PP4/GymLogo.png) 
 - Footer
 
    - The footer section includes links to relevant social media sites for GymGeeks. The links will open to a new tab to allow easy navigation for the user. 
@@ -29,7 +30,7 @@ GymGeeks is an all in one gym shop and training centre. GymGeeks offers a wide v
    - The footer sticks to the bottom of the page and is located on every page of this site. 
 
    
-![footer](/media/footer.jpg) 
+![footer](/media/footer.png) 
 
 - Register 
 
@@ -40,7 +41,7 @@ GymGeeks is an all in one gym shop and training centre. GymGeeks offers a wide v
    - There is a button for the user to submit their form, they are then signed up. 
    - This page will allow the user to get signed up to GymGeeks to start their fitness journey.
 
-  ![register](/media/PP4/register.png) 
+  ![register](/media/account.png) 
 
 - Login
 
