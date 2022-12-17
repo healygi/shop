@@ -1,6 +1,6 @@
 # GymGeeks
 
-GymGeeks is an all in one gym shop and training centre. GymGeeks offers a wide variety of activewear, shoes, gym equipment and hand crafted protein shakes. They also offer a wide variety of classes that can be bought by individual users or in a package subscription deal. GymGeeks appeal to a wide variety of people - people who want to invest in good quailty active wear, people who want to join a gym or start some classes, people who have an interest in being active and joining a community.
+GymGeeks is an all in one gym shop and online training hub. GymGeeks offers a wide variety of activewear, gym equipment and online classes. A user can select from a range of classes and buy a month subscription. With each subscription a GymGeek kit is included specifically crafted to each class. GymGeeks appeals to a wide variety of people - people who want to invest in good quailty active wear, people who want to buy gym equipment and people who want to join a gym but are too busy in their day-to-day lives - the option of an online digital-hub where one can exercise in the comfort of their own homes is becoming increasingly popular. Having the combination of shopping and training all from your home in this day an age is of massive interest. 
 
 # Features
 

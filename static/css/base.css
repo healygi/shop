@@ -285,14 +285,14 @@ input[name='q']::placeholder {
     margin-top: auto;
 }
 
-.rounded {
+/* .rounded {
     width: 50%;
     position: fixed;
     margin-left: 300px;
     margin-top: 0px;
     margin-bottom: 100px;
     padding: 50px;
-}
+} */
 
 /* .responsive {
     width: 100%;
@@ -302,6 +302,7 @@ input[name='q']::placeholder {
 .image-container {
     position: fixed;
     margin-top: 0px;
+    display: contents;
 }
 
 
