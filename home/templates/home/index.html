@@ -10,7 +10,33 @@
 {% endblock %} 
 
 {% block content %} 
-     <div class="container">
+
+<div class="container-fluid p-5">
+  <div class="row">
+    <div class="col-9"> <h1 class="display-4 logo-font text-black" style="">
+      Shop & Gym &nbsp;<i class="fas fa-dumbbell"></i>
+    </div>
+    <!-- <div class="col-4 p-4">One stop shop and online training hub<br> -->
+      <h4 class="col-4 p-4">
+      <a href="{% url 'products' %}" class="shop-now-button btn btn-lg text-uppercase">Shop Now</a>
+     </h4>
+    <div class="p-4"><br>
+      <ul class="list-group">
+        <li class="list-group-item" style=" background-color: #000;
+        color: yellow;"><a href="{% url 'products' %}?category=Gym_Equipment">Gym Equipment</a>&nbsp;&nbsp;<i class="fas fa-check" style="color:yellow"></i></li>
+        <li class="list-group-item" style=" background-color: #000;
+        color: yellow;"><a href="{% url 'products' %}?category=activewear,leggings,socks">Activewear</a>&nbsp;&nbsp;<i class="fas fa-check" style="color:yellow"></i></li>
+        <li class="list-group-item" style=" background-color: #000;
+        color: yellow;"><a href="{% url 'products' %}?category=kits">Gym Kits</a>&nbsp;&nbsp;<i class="fas fa-check" style="color:yellow"></i></li>
+        <li class="list-group-item" style=" background-color: #000;
+        color: yellow;"><a href="{% url 'products' %}?category=supplements">Supplements</a>&nbsp;&nbsp;<i class="fas fa-check" style="color:yellow"></i></li>
+      </ul>
+    </div>
+    <!-- <img src="/media/workout_txt.png" class="img-fluid" alt="Responsive image"> -->
+  </div>
+</div>
+
+     <!-- <div class="container">
           <img src="/media/workout_txt.png" class="rounded" style="display: flex;" alt="Responsive image">
           <div class="row">
                <div class="col-7 col-md-6 my-auto">
@@ -25,7 +51,7 @@
                         </h4>
                </div>
           </div>
-     </div>
+     </div> -->
    
      <footer class="bg-black text-center text-white footer fixed-bottom">
           <!-- Grid container -->
@@ -50,9 +76,5 @@
               
               <p>Keep up to date with all our latest offers</p>
               <a href="#" target="_blank"><i class="fab fa-facebook-square"></i> Follow us on Facebook!</a>
-
-           
-               <!-- <h6>Location &nbsp;<i class="fas fa-location-arrow fa-xs"></i></h6>1 Peel Road, Golden Lane, Dublin 8, D08A4B3</p>
-          </div> -->
         </footer>
 {% endblock %}

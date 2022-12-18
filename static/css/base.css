@@ -45,7 +45,7 @@ img {
 .shop-now-button {
     background: yellow;
     color: black;
-    min-width: 260px;
+    /* min-width: 260px; */
 }
 
 .btn-black {
@@ -284,6 +284,11 @@ input[name='q']::placeholder {
     color: black;
     margin-top: auto;
 }
+/* 
+li {
+    background-color: #000;
+    color: yellow;
+} */
 
 /* .rounded {
     width: 50%;
