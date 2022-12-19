@@ -57,6 +57,32 @@ GymGeeks is an online gym shop for all your gym essentials - from gym equipment 
 
      ![register](/media/sign-in.png) 
 
+- Product Page
+
+  - The user can select which category they would like to view. Here they can look at each product, view their price, rating and title.
+  - If they want to investigate a product further they can select it and then they will be guided to the individual product so they can read the product description description.
+
+      ![register](/media/product-detail.png) 
+
+- Basket/Checkout 
+
+   - The user can navigate to the checkout by clicking on their basket. 
+   - The user can then view their basket and see the amount it has complied to. 
+   - They can then decide to 'keep shopping' or proceed to 'secure checkout.' 
+   - The checkout page contains a simple form. 
+   - The user must fill out their delivery details and card details.
+   - Vaild card details are required, for instance enough numbers and no letters. 
+   - The page is simple and minialist, allowing ease of navigation and an enjoyable user experience. 
+
+     ![register](/media/product-detail.png) 
+
+- Product Management 
+
+   - If the user is admin, they can login and edit the site via 'product management.' 
+   - This is a neat form where the user can add or update their products.
+   - This allows ease of access and flow for admins instead of using the Django back end framework. 
+
+
 # Other Technologies
 
 - Gitpod as the IDE
@@ -89,11 +115,13 @@ GymGeeks is an online gym shop for all your gym essentials - from gym equipment 
 
 # Scope
 
-The scope of this project was large at the planning stage. The ultimate goal was to create an e-commerce site that combined a Gym club and an active wear/gym equipment shop. Thus, an all in one GymHub. The site must allow users to complete a purchase on my e-commerce store and for everything to run smoothly in this process. This meant - payment was processed, email reciept with details, order history evident in logged in user profile and abandoned baskets were remembered if a user was logged in. This also meant if a user was an admin they had full CRUD functionality on store products. Thus, they would be able to access 'product management' on login and edit, delete and create products for the store instead of using Django admin. This allowed for a smoother process for potential employees and a nicer user experience. I wanted to encourage an online community with my site for users to chat to each other and get to know the GymGeeks team but time constraints meant I was not able to implement this further functionality. However, via the Facebook business account community could be encouraged and if I was to see a vision for GymGeeks this is where the bulk of community would exist via posting and sharing and commenting - the GymGeek site itself would solely act as a e-commerce gym shop and gym-fitness subscription service. I would have liked to implemented 'live available classes timetable' and a page to get to know the team but time constraints affected on implementing this. 
+The scope of this project was very large at the planning stage. The ultimate goal was to create an e-commerce site that combined a Gym club and an active wear/gym equipment shop. Thus, an all in one GymHub. The site must allow users to complete a purchase on my e-commerce store and for everything to run smoothly in this process. This meant - payment was processed, email reciept with details, order history evident in logged in user profile and abandoned baskets were remembered if a user was logged in. This also meant if a user was an admin they had full CRUD functionality on store products. Thus, they would be able to access 'product management' on login and edit, delete and create products for the store instead of using Django admin. This allowed for a smoother process for potential employees and a nicer user experience. This was all achieved within this project.
 
-# Structure ?
+In addtion,  I wanted to encourage an online community with my site for users to chat to each other and get to know the GymGeeks team but time constraints meant I was not able to implement this further functionality. However, via the Facebook business account community could be encouraged and if I was to see a vision for GymGeeks this is where the bulk of community would exist via posting and sharing and commenting - the GymGeek site itself would solely act as a e-commerce gym shop. I wanted to implement a subscription service/nutrition plans but again time constraints and personal health issues prevented me from doing so. I would have liked to implemented 'live available classes timetable' and a page to get to know the team. In the end I thought it was best for GymGeeks to act as a gym shop. This has a clear focus on gym essentials - e.g equipment, active wear and supplements for people who do not have time or the money to join a gym or prefer to work out at home or outside. I also thought to add 'gym kits.' I thought this was a good marketable ploy for customers to gift their loved ones who have an interest in activies such as boxing or yoga. 
 
-The site consists of 6 pages: Home, Sign-up/Sign-in, shop (x3 currently). All pages can be viewed by all users. The ability to comment/like posts is limited to logged in users. 
+# Structure
+
+The site consists of 11 pages: Home, register, sign-in, products (x4 categories currently), shopping basket, checkout, product management. All pages can be viewed by all users, apart from product management which can only be viewed by a site admin. 
 
 # Epics and User Stories
  - I had 8 Epics:
@@ -265,6 +293,7 @@ The site consists of 6 pages: Home, Sign-up/Sign-in, shop (x3 currently). All pa
 ## Unfixed Bugs
 
 - I had a lot of errors when I attempted to set up my facebook business account. I made 3 separate social media accounts to create this page but facebook kept blocking it after a few minutes.  
+- Instead I modified an already existing Facebook Business Page and edited to fit my site using Canva.
 
 ## UX Design 
 
@@ -321,4 +350,3 @@ I took the following steps to begin my deployment:
 
 - Thank you to friends and family for putting up with me through the last rounds of this diploma. 
 - Thank you to my mentor for his guidance. 
-
