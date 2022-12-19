@@ -13,26 +13,28 @@
 
 <div class="container-fluid p-5">
   <div class="row">
-    <div class="col-9"> <h1 class="display-4 logo-font text-black" style="">
+    <div class="col-8"> <h1 class="display-4 logo-font text-black" style="">
       Shop & Gym &nbsp;<i class="fas fa-dumbbell"></i>
-    </div>
-    <!-- <div class="col-4 p-4">One stop shop and online training hub<br> -->
-      <h4 class="col-4 p-4">
-      <a href="{% url 'products' %}" class="shop-now-button btn btn-lg text-uppercase">Shop Now</a>
-     </h4>
-    <div class="p-4"><br>
-      <ul class="list-group">
-        <li class="list-group-item" style=" background-color: #000;
-        color: yellow;"><a href="{% url 'products' %}?category=Gym_Equipment">Gym Equipment</a>&nbsp;&nbsp;<i class="fas fa-check" style="color:yellow"></i></li>
-        <li class="list-group-item" style=" background-color: #000;
-        color: yellow;"><a href="{% url 'products' %}?category=activewear,leggings,socks">Activewear</a>&nbsp;&nbsp;<i class="fas fa-check" style="color:yellow"></i></li>
-        <li class="list-group-item" style=" background-color: #000;
-        color: yellow;"><a href="{% url 'products' %}?category=kits">Gym Kits</a>&nbsp;&nbsp;<i class="fas fa-check" style="color:yellow"></i></li>
-        <li class="list-group-item" style=" background-color: #000;
-        color: yellow;"><a href="{% url 'products' %}?category=supplements">Supplements</a>&nbsp;&nbsp;<i class="fas fa-check" style="color:yellow"></i></li>
+      <div class="col-5"> <h1 class="text-black" style="background-color: grey;">
+        <ul class="list-group" style="border: none;">
+        <li class="list-group-item" style=" background-color: #555555;
+        color: yellow; border: none;"><a href="{% url 'products' %}?category=Gym_Equipment">Gym Equipment</a>&nbsp;&nbsp;<i class="fas fa-check" style="color:yellow"></i></li>
+        <li class="list-group-item" style=" background-color: #555555;
+        color: yellow; border: none;"><a href="{% url 'products' %}?category=activewear,leggings,socks">Activewear</a>&nbsp;&nbsp;<i class="fas fa-check" style="color:yellow"></i></li>
+        <li class="list-group-item" style=" background-color: #555555;
+        color: yellow; border: none;"><a href="{% url 'products' %}?category=kits">Gym Kits</a>&nbsp;&nbsp;<i class="fas fa-check" style="color:yellow"></i></li>
+        <li class="list-group-item" style=" background-color: #555555;
+        color: yellow; border: none;"><a href="{% url 'products' %}?category=supplements">Supplements</a>&nbsp;&nbsp;<i class="fas fa-check" style="color:yellow"></i></li>
       </ul>
     </div>
-    <!-- <img src="/media/workout_txt.png" class="img-fluid" alt="Responsive image"> -->
+    </div>
+    <div class="col-4 p-4">
+      <img src="/media/workout_txt.png" class="img-fluid" alt="Responsive image">
+   </div>
+    <!-- <div class="col-4 p-4">One stop shop and online training hub<br> -->
+      <h4 class="col-8 p-4">
+      <a href="{% url 'products' %}" class="shop-now-button btn btn-lg text-uppercase">Shop Now</a>
+     </h4>
   </div>
 </div>
 

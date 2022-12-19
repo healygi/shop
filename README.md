@@ -1,6 +1,6 @@
 # GymGeeks
 
-GymGeeks is an all in one gym shop and online training hub. GymGeeks offers a wide variety of activewear, gym equipment and online classes. A user can select from a range of classes and buy a month subscription. With each subscription a GymGeek kit is included specifically crafted to each class. GymGeeks appeals to a wide variety of people - people who want to invest in good quailty active wear, people who want to buy gym equipment and people who want to join a gym but are too busy in their day-to-day lives - the option of an online digital-hub where one can exercise in the comfort of their own homes is becoming increasingly popular. Having the combination of shopping and training all from your home in this day an age is of massive interest. 
+GymGeeks is an online gym shop for all your gym essentials - from gym equipment to activewear to supplements to exercise kits. A user can select from a wide range of gym equipment, activewear, supplements and exercise kits - that they can buy for themselves or gift to loved ones who loves to exercise. GymGeek kits are handcrafted specifically for individuals with different hobbies. For example, there is a running kit, boxercise kit etc to cater to a users specific interest. GymGeeks appeals to a wide variety of people - people who want to invest in good quailty active wear, people who want to buy gym equipment and people who want to gift their loved ones or themselves a fun active kit. 
 
 # Features
 
@@ -8,16 +8,18 @@ GymGeeks is an all in one gym shop and online training hub. GymGeeks offers a wi
 
 - Navigation Bar
 
-   - Featured on every page this is a simple navigation bar. It is fully responsive and includes links to Home, Register, Login. It also offers a link to 'product management' if you are an account admin and 'my profile' if  you have registered as a user.  It is identical on each page to allow for easy navigation unless the user logs in then obviously the 'register' link disappears. 
+   - Featured on every page this is a simple navigation bar. It is fully responsive and includes links to Home, Register, Login. It also offers a link to 'product management' if you are an account admin and 'my profile' if  you have registered as a user.  It is identical on each page to allow for easy navigation.
    - If the user is viewing the site a phone or tablet - the navigation becomes a simple burger menu. This allows for easy flow navigation. 
    - The logo 'GymGeeks' is also a clickable link to the homepage. This allows for easy navigation when the user views the site on a mobile or tablet device. 
 
   
-![nav bar](/media/navbar.png)) 
+![nav bar](/media/navbar2.png)) 
 
 - Home
 
-   - The homepage is simple and minimalist. It contains a 'shop now' button and a catchy slogan 'GymGeeks, more than just a gym....Grain & Train' with an transparent image titled 'Workout. The 'shop now' button links directly to GymGeeks catalogue of vairous products. I thought by keeping the style of the homepage minimalist with just a shop now button the user would be more likely to click the link than if there was a lot to read on the homepage itself. The navigation is at the top and footer with links to social media at the bottom of the page.
+   - The homepage is simple and minimalist. It contains a 'shop now' button and a catchy slogan 'Shop & Gym' with an transparent image titled 'Workout.' The 'shop now' button links directly to GymGeeks catalogue of vairous products. I thought by keeping the style of the homepage minimalist with just a shop now button the user would be more likely to click the link than if there was a lot to read on the homepage itself. The navigation is at the top and footer with links to social media at the bottom of the page.
+
+   - I modifed the design during development. I thought it would improve user experience by adding a clickable list. I thought this woud be eye-catching and the user would be more likely to click on these links than opening the products in the nav bar. I still kept the nav bar so the user could navigate between products when they are on the product detail page. 
 
    
 ![homepage](/media/PP4/Home.png) 
@@ -35,22 +37,25 @@ GymGeeks is an all in one gym shop and online training hub. GymGeeks offers a wi
 - Register 
 
    - A user can register by clicking on the register link in the nav bar. 
-   - The user is taken to the sign up page where they are instructed to sign up via email and enter their password twice. 
-   - Email validation is in place requring an '@' sign and '.com, .co, .ie, etc.'
-   - The user recieves a success message I implemented via 'toasts' GymGeeks once they sign up/in/out. They recieve an error message if they do not successfully sign in.  
+   - The user is taken to the sign up page where they are instructed to sign up via email and enter their email and password twice. They also must create a username.
+   - Email validation is in place requring an '@' sign and '.com, .co, .ie, etc.' The user must confirm their email before they can access GymGeeks.
+   - Password validation is in place requiring 8 characters, no solely numeric value and common password. 
+   - The user recieves a success message I implemented via 'toasts' once they sign up/in/out. They recieve an error message if they do not successfully sign in.  
    - There is a button for the user to submit their form, they are then signed up. 
-   - This page will allow the user to get signed up to GymGeeks to start their fitness journey.
+   - This page will allow the user to sign up to GymGeeks.
 
-  ![register](/media/account.png) 
+  ![register](/media/sign-up.png) 
 
-- Login
+- Sign In
 
-   - A user can login by clicking on the login link in the nav bar. 
-   - The user is taken to the sign in page where they are instructed to sign in via email or social media. If the user does not have an account they can sign up following the provided link. 
+   - A user can login by clicking on 'My Account' link in the nav bar. 
+   - The user is taken to the sign in page where they are instructed to sign in via email or username. If the user does not have an account they can sign up following the provided link. 
    - On the sign-in page the user can sign in using an email address and password. They can select "remember me" if they so wish. 
    - The user has to enter a valid email containing "@" and a valid password. 
    - I created password validation to require - a miniumum length, a numeric value and avoid common password. 
    - There is a button for the user to submit their form, they are then signed in and alerted that they are signed in. 
+
+     ![register](/media/sign-in.png) 
 
 # Other Technologies
 
