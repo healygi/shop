@@ -130,12 +130,6 @@ else:
      }
     }
 
-# DATABASES = {
-#      'default': dj_database_url.parse('postgres://pbbuxlxv:fL3N8GfNjxJE8evtLKUxJnzxlaRl9s0J@lucky.db.elephantsql.com/pbbuxlxv')
-#  }
-   
-
-
 # Password validation
 # https://docs.djangoproject.com/en/3.0/ref/settings/#auth-password-validators
 
@@ -207,3 +201,6 @@ STRIPE_PUBLIC_KEY = os.getenv('STRIPE_PUBLIC_KEY', '')
 STRIPE_SECRET_KEY = os.getenv('STRIPE_SECRET_KEY', '')
 STRIPE_WH_SECRET = os.getenv('STRIPE_WH_SECRET', '')
 DEFAULT_FROM_EMAIL = 'gymgeek@gmail.com'
+
+# configure the auto field 
+DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
