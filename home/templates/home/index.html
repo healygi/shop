@@ -10,52 +10,21 @@
 {% endblock %} 
 
 {% block content %} 
-<div class="container">
-
-<div class="container-fluid p-5">
-  <div class="row">
-    <div class="col-8"> <h1 class="display-4 logo-font text-black" style="">
-      Shop & Gym &nbsp;<i class="fas fa-dumbbell"></i>
-      <div class="col-5"> <h1 class="text-black" style="background-color: grey;">
-        <ul class="list-group" style="border: none;">
-        <li class="list-group-item" style=" background-color: #555555;
-        color: yellow; border: none;"><a href="{% url 'products' %}?category=Gym_Equipment">Gym Equipment</a>&nbsp;&nbsp;<i class="fas fa-check" style="color:yellow"></i></li>
-        <li class="list-group-item" style=" background-color: #555555;
-        color: yellow; border: none;"><a href="{% url 'products' %}?category=activewear,leggings,socks">Activewear</a>&nbsp;&nbsp;<i class="fas fa-check" style="color:yellow"></i></li>
-        <li class="list-group-item" style=" background-color: #555555;
-        color: yellow; border: none;"><a href="{% url 'products' %}?category=Gym_Kits">Gym Kits</a>&nbsp;&nbsp;<i class="fas fa-check" style="color:yellow"></i></li>
-        <li class="list-group-item" style=" background-color: #555555;
-        color: yellow; border: none;"><a href="{% url 'products' %}?category=supplements">Supplements</a>&nbsp;&nbsp;<i class="fas fa-check" style="color:yellow"></i></li>
-      </ul>
-    </div>
-    </div>
-    <div class="col-4 p-4">
-      <img src="/media/workout_txt.png" class="img-fluid" alt="Responsive image">
-   </div>
-    <!-- <div class="col-4 p-4">One stop shop and online training hub<br> -->
-      <h4 class="col-8 p-4">
-      <a href="{% url 'products' %}" class="shop-now-button btn btn-lg text-uppercase">Shop Now</a>
+<div class="container h-100">
+<div class="row h-100">
+  <div class="col-7 col-md-6 my-auto">
+    <h1 class="display-4 logo-font text-black">
+      Shop & Gym &nbsp;<i class="fas fa-dumbbell"></i></h1>
+    <!-- <img src="/media/workout_txt.png" class="img-fluid" alt="Responsive image"> -->
+    <div class="my-5">
+      <h4>
+      <a href="{% url 'products' %}" class="shop-now-button btn btn-lg rounded-0 text-uppercase py-3">Shop Now</a>
      </h4>
+     <!-- <img src="/media/workout_txt.png" class="img-fluid" alt="Responsive image"> -->
+    </div>
+  </div>
   </div>
 </div>
-</div>
-
-     <!-- <div class="container">
-          <img src="/media/workout_txt.png" class="rounded" style="display: flex;" alt="Responsive image">
-          <div class="row">
-               <div class="col-7 col-md-6 my-auto">
-                    <h1 class="display-4 logo-font text-black" style="padding-bottom: 30px;">
-                        Shop & Gym &nbsp;<i class="fas fa-dumbbell"></i>
-                      </h1>
-                      <h3>
-                        One stop shop and online training hub
-                      </h3>
-                        <h4>
-                         <a href="{% url 'products' %}" class="shop-now-button btn btn-lg rounded-0 text-uppercase py-3">Shop Now</a>
-                        </h4>
-               </div>
-          </div>
-     </div> -->
    
      <footer class="bg-black text-center text-white footer fixed-bottom">
           <!-- Grid container -->
