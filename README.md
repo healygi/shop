@@ -1,7 +1,7 @@
 # GymGeeks
 
   
-![nav bar](/media/GymGeeks.jpg)) 
+![home page](/media/GymGeeks.jpg)) 
 
 
 GymGeeks is an online gym shop for all your gym essentials - from gym equipment to activewear to supplements to exercise kits. A user can select from a wide range of gym equipment, activewear, supplements and exercise kits - that they can buy for themselves or gift to loved ones who loves to exercise. GymGeek kits are handcrafted specifically for individuals with different hobbies. For example, there is a running kit, boxercise kit etc to cater to a users specific interest. GymGeeks appeals to a wide variety of people - people who want to invest in good quailty active wear, people who want to buy gym equipment and people who want to gift their loved ones or themselves a fun active kit. 
