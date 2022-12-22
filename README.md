@@ -1,5 +1,9 @@
 # GymGeeks
 
+  
+![nav bar](/media/GymGeeks.jpg)) 
+
+
 GymGeeks is an online gym shop for all your gym essentials - from gym equipment to activewear to supplements to exercise kits. A user can select from a wide range of gym equipment, activewear, supplements and exercise kits - that they can buy for themselves or gift to loved ones who loves to exercise. GymGeek kits are handcrafted specifically for individuals with different hobbies. For example, there is a running kit, boxercise kit etc to cater to a users specific interest. GymGeeks appeals to a wide variety of people - people who want to invest in good quailty active wear, people who want to buy gym equipment and people who want to gift their loved ones or themselves a fun active kit. 
 
 # Features
@@ -79,6 +83,9 @@ GymGeeks is an online gym shop for all your gym essentials - from gym equipment 
    - This is a neat form where the user can add or update their products.
    - This allows ease of access and flow for admins instead of using the Django back end framework. 
 
+- 404 page
+
+ - I implemented a 404 page with an appropriate redirect back to the product shop page in case the user attempted to access non-existent content. 
 
 # Other Technologies
 
@@ -340,17 +347,17 @@ I took the following steps to begin my deployment:
 
 1. I installed Django and the supporting libraries.
 2. I created a new blank Django project and app.
-3. I set my project to use Cloudinary (where my images would be stored) and PostgreSQL (relational database management system). 
-4. Deployment came into difficulty when Heroku stopped offering free accounts and so I had apply for a student gitpod starter pack and export my older projects data to ElephantSQL. Luckily I had not deployed my PP5 by this point so I did not have to migrate my files to a new database. ElephantSQL was all hooked up before I began deployment.
+3. I set my project to using AWS (where my images would be stored) and ElephantSQL (relational database management system). 
+4. Deployment came into difficulty when Heroku stopped offering free accounts and so I had apply for a student gitpod starter pack and export my older projects data to ElephantSQL. Luckily I had not yet deployed my PP5 by this point so I did not have to migrate my files to a new database. ElephantSQL was all hooked up before I began deployment.
 5. I created an app named 'GymGeeks' and gave it the location - 'Europe.'
 5. By following the steps outlines by Code Institute I added ElephantSQL as my database in the Resources tab of my app - I migrated my older data from Postgres to ElephantSQL. 
 6. I copied the DATABASE_URL from my Config Vars and added it to my env.py file to link my new database_url with my Heroku app.
 7. I created my SECRET_KEY in my environ.py file to encrypt session cookies and added this to my Heroku app config vars.
 8. I then imported dj_database_url, os and added my SECRET_KEY and DATABASES to my settings.py file.
 9. I migrated my files. 
-10. I created a Cloudinary account to store my images- I linked this URL to my env.py file and my Heroku app config vars.
-11. In my settings.py file I added 'cloudinary_storage' and the cloudinary library to my INSTALLED_APPS.
-12. After linking Django to Cloundinary, adding my Templates Directory, creating my three directories - media, static and templates, adding a Procfile (web: gunicorn gymgeeks.wsgi) and adding my heroku app to ALLOWED_HOSTS in my settings.py file- I was then ready to make my first deployment to Heroku. 
+10. I created a AWS bucket to store my images/media/static- I linked this URL to my env.py file and my Heroku app config vars.
+11. In my settings.py file I added the required details for AWS to work.
+12. After linking Django to AWS, adding my Templates Directory, creating my three directories - media, static and templates, adding a Procfile (web: gunicorn gymgeeks.wsgi) and adding my heroku app to ALLOWED_HOSTS in my settings.py file- I was then ready to make my first deployment to Heroku. 
 13. In the deployment tab of my app I connected GitHub to my deployment method. 
 14. I then connected my app to my GitHub repository and deployed it to my main branch. 
 15. I watched the buliding log and when it was complete I selected 'open app' and my app successfully deployed. 
