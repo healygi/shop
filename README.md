@@ -63,7 +63,7 @@ GymGeeks is an online gym shop for all your gym essentials - from gym equipment 
   - If they want to investigate a product further they can select it and then they will be guided to the individual product so they can read the product description description.
   - They can select the size of their product (if the product has a size)
 
-      ![register](/media/product-detail.png) 
+      ![register](/media/products.jpg) 
 
 - Basket/Checkout 
 
@@ -75,7 +75,9 @@ GymGeeks is an online gym shop for all your gym essentials - from gym equipment 
    - Vaild card details are required, for instance enough numbers and no letters. 
    - The page is simple and minialist, allowing ease of navigation and an enjoyable user experience. 
 
-     ![register](/media/product-detail.png) 
+     ![shopping](/media/shopping-bag.jpg) 
+     ![checkout](/media/checkout.jpg) 
+
 
 - Product Management 
 
@@ -87,6 +89,14 @@ GymGeeks is an online gym shop for all your gym essentials - from gym equipment 
 
  - I implemented a 404 page with an appropriate redirect back to the product shop page in case the user attempted to access non-existent content. 
 
+ ![404](/media/404.jpg) 
+
+- Stripe
+
+ - I implemented Stripe in test mode. Below are the credentials that can be used to make a 'fake' payment and test that all systems are working as they should.
+
+  ![stripe](/media/stripe.jpg) 
+
 # Other Technologies
 
 - Gitpod as the IDE
@@ -95,13 +105,10 @@ GymGeeks is an online gym shop for all your gym essentials - from gym equipment 
 - ElephantSQL was used as the cloud based platform for deployment
 - Fontawesome for icons
 - Google images & Pexel for images
-- Lucid for wireframes
 - Canva for Facebook Business Mock-up
 - Google Chrome Dev Tools for inspection during development to check reponsiveness and contrast.
 - Favicon.io for the favicon
 - W3C Markup Validation Service
-- W3C CSS Validation Service(Jigsaw) 
-- PEP8 Online Checker
 
 # Agile Development Methology:
 
@@ -279,14 +286,12 @@ The site consists of 11 pages: Home, register, sign-in, products (x4 categories 
 - HTML
    - No errors were returned when passing through the official W3C validator
 
-- CSS
-   -  No errors were returned when passing through the official Jigsaw validator
+- Terminal
+   - I went through my terminal errors line by line and tided up any issues or problems. 
+   - To see all errors at once I used flake8 in my terminal. This made it easier to work through each issue as it took me directly to the line in which the issue was present.
 
-- Python
-   - No errors were returned when passing through the PEP8 online check. 
-
-- Javascript 
-   - No errors were returned 
+- Validator
+  - Due to time constraints I was not able to fully test ny code in all vaildators. Tutor support said it is best to just fixed the issues in the terminal given the time pressue I was under. 
 
 ## Unfixed Bugs
 
@@ -329,6 +334,7 @@ If I had more time and was not in bad health, I would have liked to implement ma
 - I selected a simple readable, pleasing font to make sure my text was easily and quickly readable. 
 - I provided ease of navigation so that the user can go back and forth between the homepage, browse merchandise, basket/checkout and profile. I also provided the ability for the user to have their own profile so that they can 
 - I created a favicon icon with the intials of my site 'GG'. I used an eyecatching font and stuck with the pallet of my site.
+- I had implemented a 'workout' image/logo on the homepage but changed this before submission as it did not look good or go with the flow on a mobile device. Users are more likely to be looking at this site via mobiles so I removed this. I did keep it in my Facebook Business Page as I thought it looked good and more professional and did not disturb the flow. 
 
 ## Facebook Business Page
 
