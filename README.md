@@ -88,6 +88,7 @@ GymGeeks is an online gym shop for all your gym essentials - from gym equipment 
 - 404 page
 
  - I implemented a 404 page with an appropriate redirect back to the product shop page in case the user attempted to access non-existent content. 
+ - To see this page please use this url - https://gymgeeks.herokuapp.com/test
 
  ![404](/media/404.jpg) 
 
