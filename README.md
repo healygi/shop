@@ -19,12 +19,8 @@ GymGeeks is an online gym shop for all your gym essentials - from gym equipment 
 
    - The homepage is simple and minimalist. It contains a 'shop now' button and a catchy slogan 'Shop & Gym' with an transparent image titled 'Workout.' The 'shop now' button links directly to GymGeeks catalogue of vairous products. I thought by keeping the style of the homepage minimalist with just a shop now button the user would be more likely to click the link than if there was a lot to read on the homepage itself. The navigation is at the top and footer with links to social media at the bottom of the page.
 
-   - I modifed the design during development. I thought it would improve user experience by adding a clickable list. I thought this woud be eye-catching and the user would be more likely to click on these links than opening the products in the nav bar. I still kept the nav bar so the user could navigate between products when they are on the product detail page. 
+   - I modifed the design during development. I thought it would improve user experience by adding a clickable list. I thought this woud be eye-catching and the user would be more likely to click on these links than opening the products in the nav bar. I still kept the nav bar so the user could navigate between products when they are on the product detail page. I ended up changing this design right before submission as it was not responding well on mobile screens and more than likely users would review this on mobile. Hence, I got ride of the list and logo for a more clean minialist design. 
 
-   
-![homepage](/media/PP4/Home.png) 
-   
-![homepage](/media/PP4/GymLogo.png) 
 - Footer
 
    - The footer section includes links to relevant social media sites for GymGeeks. The links will open to a new tab to allow easy navigation for the user. 
@@ -61,6 +57,7 @@ GymGeeks is an online gym shop for all your gym essentials - from gym equipment 
 
   - The user can select which category they would like to view. Here they can look at each product, view their price, rating and title.
   - If they want to investigate a product further they can select it and then they will be guided to the individual product so they can read the product description description.
+  - They can select the size of their product (if the product has a size)
 
       ![register](/media/product-detail.png) 
 
@@ -111,13 +108,11 @@ GymGeeks is an online gym shop for all your gym essentials - from gym equipment 
  - I kept my site simple to ensure all the functionality ran smoothly and efficiently, keeping continious attention to technical proficiency. 
  - To start, I chose between one - three 'Must Have' user stories and moved them into the 'in progress' board and continued from there, starting with the 'must have' stories first with some others that over-lapped moving on to the 'should have' and then 'could have' depending on my time frame and scope. Towards the end of my project I changed some to 'won't have' as this time frame and scope did not let me implement certain things like a booking system and class timetable.
 
-![kanban board](/media/PP4/kanban_board.png) 
-
 # Scope
 
 The scope of this project was very large at the planning stage. The ultimate goal was to create an e-commerce site that combined a Gym club and an active wear/gym equipment shop. Thus, an all in one GymHub. The site must allow users to complete a purchase on my e-commerce store and for everything to run smoothly in this process. This meant - payment was processed, email reciept with details, order history evident in logged in user profile and abandoned baskets were remembered if a user was logged in. This also meant if a user was an admin they had full CRUD functionality on store products. Thus, they would be able to access 'product management' on login and edit, delete and create products for the store instead of using Django admin. This allowed for a smoother process for potential employees and a nicer user experience. This was all achieved within this project.
 
-In addtion,  I wanted to encourage an online community with my site for users to chat to each other and get to know the GymGeeks team but time constraints meant I was not able to implement this further functionality. However, via the Facebook business account community could be encouraged and if I was to see a vision for GymGeeks this is where the bulk of community would exist via posting and sharing and commenting - the GymGeek site itself would solely act as a e-commerce gym shop. I wanted to implement a subscription service/nutrition plans but again time constraints and personal health issues prevented me from doing so. I would have liked to implemented 'live available classes timetable' and a page to get to know the team. In the end I thought it was best for GymGeeks to act as a gym shop. This has a clear focus on gym essentials - e.g equipment, active wear and supplements for people who do not have time or the money to join a gym or prefer to work out at home or outside. I also thought to add 'gym kits.' I thought this was a good marketable ploy for customers to gift their loved ones who have an interest in activies such as boxing or yoga. 
+In addtion, I wanted to encourage an online community with my site for users to chat to each other and get to know the GymGeeks team but time constraints meant I was not able to implement this further functionality. However, via the Facebook business account community could be encouraged and if I was to see a vision for GymGeeks this is where the bulk of community would exist via posting and sharing and commenting - the GymGeek site itself would solely act as a e-commerce gym shop. I wanted to implement a subscription service/nutrition plans but again time constraints and personal health issues prevented me from doing so. I would have liked to implemented 'live available classes timetable' and a page to get to know the team. In the end I thought it was best for GymGeeks to act as a all in one gym shop with active-wear, gym equipment and supplements - the active user won't need to go anywhere else! GymGeeks has a clear focus on gym essentials - e.g equipment, active wear and supplements for people who do not have time or the money to join a gym or prefer to work out at home or outside. I also thought to add 'kits.' I thought this was a good marketable ploy for customers to gift their loved ones who have an interest in activties such as boxing or yoga. 
 
 # Structure
 
@@ -269,9 +264,7 @@ The site consists of 11 pages: Home, register, sign-in, products (x4 categories 
 
 - I tested my site on the website - responsive design checker- which ran my site through a variety of different screen sizes and devices. I inspected each one and was happy with the level of responsivity.
 
-- I tested my site in dev tools lighthouse and was happy with the result:
-
- ![lighthouse](/media/PP4/lighthouse.png) 
+- I tested my site in dev tools lighthouse and was happy with the result.
 
 
 ## Validator Testing 
@@ -288,12 +281,36 @@ The site consists of 11 pages: Home, register, sign-in, products (x4 categories 
 - Javascript 
    - No errors were returned 
 
-   ![html-validator](/media/PP4/validator.png) 
-
 ## Unfixed Bugs
 
 - I had a lot of errors when I attempted to set up my facebook business account. I made 3 separate social media accounts to create this page but facebook kept blocking it after a few minutes.  
 - Instead I modified an already existing Facebook Business Page and edited to fit my site using Canva.
+- The product images became hidden under the footer in some views - thus I added a overflow scroll and max-height which prevents this now from occuring.
+- In mobile view the top to move the user to the top of the screen overlaps with go to cart. I found this bug last minute and I was unable to remove it in time.
+
+## Marketing 
+
+- SEO 
+
+I used SemRush to generate keywords which I then implemented in my meta-tags in head of base.html file. I inserted a meta-tag description and gave it a basic sum-up og GymGeeks site. I named my images in my media folder with accurate names so SERPS can read them better. I added keywords to the meta-tag that will increase my sites appearance on google. SemRush is a handy free tool that can be used to best optimise your choice of keywords. It is free but with limited number of times a day you can use it. I found this very useful in generating keywords rather than spending hours researching what words would be best. 
+
+I input a sitemap within my site. This helps search engines discover URLS on the site which is particurly useful if you have a large site. I generated this sitemap using the site 'XML-Sitemaps.com'. I created a robot.txt file - this tells the search engine crawlers which URLs the crawler can access on your site. This is used mainly to avoid overloading sites with requests. I generated this file here 'https://en.ryte.com/free-tools/robots-txt-generator/'
+
+- Content Marketing
+
+Within my project I implemented content marketing techniques such as offers, deals and free delivery over a certain threshold. I also created a FaceBook Business page. This is where the bulk of content marketing would occur - through posting offers, discounts and engaging users whether in raffle competitons or data-driven polls. This Facebook page could also host blog posts, videos snd newsletters - letting the customer know the latest offers. This marketing stratgey gains attention, sales and increases brand awareness and growth. I believe the Facebook page could also be used for organic growth by building a community and increasing customer loyalty and trust.
+
+- Business Model
+
+GymGeeks is a B2C business. It is an e-commerce store that sells directly to the customer. There is an open market for getting active and encouraging well being, this sector is becoming more and more popular as people start taking action with their health. Thus, I thought what could be more convient than a shop that sells, gym-equipment/clothes (to get active) and supplements (to get healthy). Plus the added benefit of kits - Is your friend a fan of running? Why not buy a 'Running-Kit'! My prognosis is if there was a one stop shop where one could take care of their health and overall well beinh - GymGeeks could be that.  It attracts people who are interested in getting active. I added on a category of 'kits' as a marketing stragety to encourages users to gift a loved one an 'active' present. This encourages well-being and health which is a market that is becomimg increasingly more popular.
+
+If I was to work further on this project I would implement Google Analytics on GymGeeks to gain a better understanding of SEO so that we could tailor our keywords more efficeintly and thus market my site more adequetly. I would also look into paid ads or promotions - gaining an Influencer especially for a gym/clothes brand would gain serious traction and definetly an angle I would look in to. 
+
+Presently and also due to time constraints - GymGeeks marketing stragety would mainly be through content marketing. This would be done through the Facebook Business Page. I implemented a footer at the end of my site to encourage users to follow the link to the site. Here the bulk of marketing would be done through content creation. Also encouraging the user to create an account in GymGeeks increases loyalty of the customer as they can come back, view their purchase history and potentially purchase again with ease as the site has remembered their address and card details (if choosen so). Having the added function of abandoned basket encourages the user to come back and shop. When the user goes on the site again and the items are still in their basket - thus this has the capability to increase sales. 
+
+If I had more time and was not in bad health, I would have liked to implement mailchimp pop-up so that the user can sign up and recieve GymGeeks newsletter of offers and deals. I would have also marketed the kits better. I think as of now they are lost in the site and there should have been a better technique put in for those kits to be more eye-catching and marketed as a gift. However, I am happy with the marketing stragety that is currently in place. I think with the combination of a facebook business page, a minimal user interface and SEO implementation - this site has enough marketing capabilites to reach the target audience. 
+
+
 
 ## UX Design 
 
@@ -305,11 +322,6 @@ The site consists of 11 pages: Home, register, sign-in, products (x4 categories 
 - I selected a simple readable, pleasing font to make sure my text was easily and quickly readable. 
 - I provided ease of navigation so that the user can go back and forth between the homepage, browse merchandise, basket/checkout and profile. I also provided the ability for the user to have their own profile so that they can 
 - I created a favicon icon with the intials of my site 'GG'. I used an eyecatching font and stuck with the pallet of my site.
-- I created a wireframe of my project prior to creating it, this wireframe allowed me to have a simple basis of what I developing and how it should look. 
-
-## Wireframe 
-
-![wireframe](/media/PP4/wireframe.png) 
 
 ## Facebook Business Page
 
@@ -319,10 +331,8 @@ The site consists of 11 pages: Home, register, sign-in, products (x4 categories 
 
 ## Final Project
 
-![final project](/media/PP4/Home.png) 
-
-- As you can see my design basically stayed the same but with a better color pallet and navigation placed beside a nicer designed 'workout' stamp on the homepage. 
-- I also provided a 'shop now' button template and short detail of the site along with examples of what the shop/basket would look like. 
+- My design changed a lot throughout this project, I had placed the image 'workout' logo on the homepage but decided to remove it as it did not suit the mobile view.  
+- If I had more time I would have liked to add an image that could have worked on this homepage - one that suited all views and went with the flow.  
 
 # Deployment 
 
@@ -348,5 +358,7 @@ I took the following steps to begin my deployment:
 
 # Credits
 
-- Thank you to friends and family for putting up with me through the last rounds of this diploma. 
+- Thank you to friends and family for putting up with me through the last rounds of this diploma and helping me through tough times. 
 - Thank you to my mentor for his guidance. 
+- Thank you to tutor support for lending me a hand.
+- Thank you to student care for your kindess.
