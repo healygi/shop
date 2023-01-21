@@ -23,7 +23,7 @@ GymGeeks is an online gym shop for all your gym essentials - from gym equipment 
 
    - The homepage is simple and minimalist. It contains a 'shop now' button and a catchy slogan 'Shop & Gym' with an transparent image titled 'Workout.' The 'shop now' button links directly to GymGeeks catalogue of vairous products. I thought by keeping the style of the homepage minimalist with just a shop now button the user would be more likely to click the link than if there was a lot to read on the homepage itself. The navigation is at the top and footer with links to social media at the bottom of the page.
 
-   - I modifed the design during development. I thought it would improve user experience by adding a clickable list. I thought this woud be eye-catching and the user would be more likely to click on these links than opening the products in the nav bar. I still kept the nav bar so the user could navigate between products when they are on the product detail page. I ended up changing this design right before submission as it was not responding well on mobile screens and more than likely users would review this on mobile. Hence, I got ride of the list and logo for a more clean minialist design. 
+   - I modifed the design during development. I thought it would improve user experience by adding a clickable list. I thought this woud be eye-catching and the user would be more likely to click on these links than opening the products in the nav bar. I still kept the nav bar so the user could navigate between products when they are on the product detail page. I ended up changing this design right before submission as it was not responding well on mobile screens and more than likely users would review this on mobile. Hence, I got rid of the list and logo for a more clean minialist design. 
 
 - Footer
 
@@ -333,9 +333,29 @@ If I had more time and was not in bad health, I would have liked to implement ma
 - I selected the colour pallet yellow, black and white as I thought it reflected strength and agility colours which would be assoicated with fitness and energy. These hard colours are strong and inviting but also smart and serious. 
 - I made sure my site was simple as a design principle for an ease in terms of user experience. 
 - I selected a simple readable, pleasing font to make sure my text was easily and quickly readable. 
-- I provided ease of navigation so that the user can go back and forth between the homepage, browse merchandise, basket/checkout and profile. I also provided the ability for the user to have their own profile so that they can 
+- I provided ease of navigation so that the user can go back and forth between the homepage, browse merchandise, basket/checkout and profile. I also provided the ability for the user to have their own profile so that they can access their purchase history and update their address/contact details. 
 - I created a favicon icon with the intials of my site 'GG'. I used an eyecatching font and stuck with the pallet of my site.
 - I had implemented a 'workout' image/logo on the homepage but changed this before submission as it did not look good or go with the flow on a mobile device. Users are more likely to be looking at this site via mobiles so I removed this. I did keep it in my Facebook Business Page as I thought it looked good and more professional and did not disturb the flow. 
+
+# Phase One
+- I created multiple mock-ups of my site homepage as this is the most important page for the user. I made sure it was minimalistic and had an easy flow. My site changed multiple times due to responsive issues, thus before submission I changed the design again so that it would display well on all screens. 
+
+![Design-Mockup](/media/design_mockup.jpg) 
+
+- This is my first design. I liked the detail and idea of implementing a clickable list of items on the homepage, I also added a large selection of navigation items as at this point my scope was much larger. 
+
+# Phase Two
+
+- My second design involved the removal of the list as this did not respond well on mobile devices and I did not have time to make this work during my project process. I also got rid of some of my nav items as I felt there was too much and it could be reduced down to just 4 tabs to accomdate all my items.
+
+![Design-Mockup2](/media/design_mockup.jpg) 
+
+# Phase Three
+
+- My third design involved the removal of the list as this did not respond well on mobile devices and I did not have time to make this work during my project process. I also got rid of some of my nav items as I felt there was too much and it could be reduced down to just 4 tabs to accomdate all my items.
+
+
+![Design-Mockup3](/media/design_mockup.jpg) 
 
 ## Facebook Business Page
 
