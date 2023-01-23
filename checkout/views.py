@@ -6,7 +6,7 @@ from django.conf import settings
 
 import stripe
 from products.models import Product
-from profiles.models import UserProfile
+from profiles.models import UserProfile, WishListItem
 from profiles.forms import UserProfileForm
 from bag.contexts import bag_contents
 from .forms import OrderForm
@@ -121,6 +121,19 @@ def checkout(request):
         else:
             order_form = OrderForm()
 
+        if request.user.is_authenticated:
+        # pylint: disable=no-member
+           profile = UserProfile.objects.get(user=request.user)
+           try:
+            wishlistitem = get_object_or_404(
+                WishListItem, user=request.user.id
+            )
+           except Exception:
+               wishlistitem = None
+        # Attach the user's profile to the order
+           order.user_profile = profile
+           order.save()
+
     if not stripe_public_key:
         messages.warning(request, 'Stripe public key is missing. \
             Did you forget to set it in your environment?')
@@ -166,6 +179,10 @@ def checkout_success(request, order_number):
     messages.success(request, f'Order successfully processed! \
         Your order number is {order_number}. A confirmation \
         email will be sent to {order.email}.')
+    if wishlistitem:
+        for item in order.lineitems.all():
+            if item.product in wishlistitem.product.all():
+                wishlistitem.product.remove(item.product)
 
     if 'bag' in request.session:
         del request.session['bag']

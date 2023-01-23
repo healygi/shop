@@ -24,6 +24,67 @@
             </div>
         </div>
         <div class="row">
+            <div class="col-12">
+                <!-- Display users wishlist items first -->
+                <h3 class="text-orange my-4">My Wishlist ({{ wishlist_items|length}})</h3>
+                {% if not wishlist_items %}
+                    <p class="text-white">No items in your Wishlist</p>
+                {% else %}
+                    <div class="row wishlist">
+                        {% for item in wishlist_items %}
+                            <!-- Each wishlist item's details -->
+                            <div class="col-6 col-md-4 col-lg-3">
+                                <div class="card h-lg-100">
+                                    <a class="products-link" href="{% url 'product_detail' item.id %}">
+                                        <p class="mb-0 product-title text-orange">{{ item.name }}</p>
+                                        {% if item.discount %}
+                                            <small class="sale-label text-shadow mt-3">Save €{{ item.discount }}!</small>
+                                        {% endif %}
+                                        {% if item.is_new %}
+                                            <small class="sale-label text-shadow label-new{% if item.discount %} lower-label{% else %} mt-3{% endif %}">NEW!</small>
+                                        {% endif %}
+                                    {% if item.image %}
+                                        <img class="wishlist-img img-fluid" src="{{ item.image.url }}" alt="{{ item.name }}">
+                                        {% else %}
+                                        <div class="wishlist-img img-fluid bg-white mb-1 py-3">
+                                            <p class="text-center text-muted py-2">
+                                                <i class="fas fa-exclamation-circle py-2 py-md-4"></i>
+                                                <br>
+                                                <small>No Image Available</small>
+                                            </p>
+                                        </div>
+                                    {% endif %}
+                                    </a>
+                                    <div class="card-body pb-0 pt-2">
+                                    </div>
+                                    <div class="card-footer pt-0 border-0">
+                                        <div class="row">
+                                            <div class="col-6 px-0 text-left">
+                                                <p class="text-orange mb-0">
+                                                    <span class="font-weight-bold">€{{ item.price }}</span>
+                                                </p>
+                                            </div>
+                                            <div class="col-6 px-0 text-right">
+                                                <small class="ml-md-3">
+                                                    <!-- Button triggers the remove from wishlist product modal -->
+                                                    <button type="button" class="btn product-edit-link text-danger" data-toggle="modal" data-target="#removeFromWishListModal{{ item.id }}">
+                                                        Remove
+                                                    </button>
+                                                </small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Wishlist remove modal -->
+                            {% include 'profiles/includes/remove_from_wishlist_modal.html' %}
+                        {% endfor %}
+                    </div>
+                {% endif %}
+            </div>
+        </div>
+        <div class="row">
             <div class="col-12 col-lg-6">
                 <p class="text-muted">Default Delivery Information</p>
                 <form class="mt-3" action="{% url 'profile' %}" method="POST" id="profile-update-form">
