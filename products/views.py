@@ -1,3 +1,4 @@
+from django.http import Http404
 from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
@@ -13,11 +14,16 @@ def all_products(request):
     """ A view to show all products, including sorting and search queries """
 
     products = Product.objects.all()
-    wishlist = WishListItem.objects.filter(user=request.user.id)
+
     query = None
     categories = None
     sort = None
     direction = None
+
+    if request.user.is_authenticated:
+        wishlist = WishListItem.objects.filter(user=request.user)
+    else:
+        wishlist = None
 
     if request.GET:
         if 'sort' in request.GET:
@@ -63,14 +69,18 @@ def product_detail(request, product_id):
     """ A view to show individual product details """
 
     product = get_object_or_404(Product, pk=product_id)
+    wishlist_exists = False
+
     try:
-        wishlistitem = get_object_or_404(WishListItem, user=request.user.id)
+        wishlistitem = get_object_or_404(WishListItem, user=request.user)
     except Http404:
         wishlistitem = {}
         wishlist = None
     else:
         wishlist = wishlistitem.product.all()
-
+        if product in wishlist:
+          wishlist_exists = True
+    
     context = {
         'product': product,
         'wishlist': wishlist,

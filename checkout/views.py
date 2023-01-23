@@ -126,7 +126,7 @@ def checkout(request):
            profile = UserProfile.objects.get(user=request.user)
            try:
             wishlistitem = get_object_or_404(
-                WishListItem, user=request.user.id
+                WishListItem, user=request.user
             )
            except Exception:
                wishlistitem = None

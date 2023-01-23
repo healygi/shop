@@ -338,24 +338,24 @@ If I had more time and was not in bad health, I would have liked to implement ma
 - I had implemented a 'workout' image/logo on the homepage but changed this before submission as it did not look good or go with the flow on a mobile device. Users are more likely to be looking at this site via mobiles so I removed this. I did keep it in my Facebook Business Page as I thought it looked good and more professional and did not disturb the flow. 
 
 # Phase One
-- I created multiple mock-ups of my site homepage as this is the most important page for the user. I made sure it was minimalistic and had an easy flow. My site changed multiple times due to responsive issues, thus before submission I changed the design again so that it would display well on all screens. 
+- I created multiple mock-ups of my site homepage as this is the most important page for the user as it is where they will make the decision to shop or not. I made sure it was minimalistic and had an easy flow. My site changed multiple times due to responsive issues, thus before submission I changed the design again so that it would display well on all screens. In hindsight, I would have my first design done on a mobile so that I wouldnt not have to worry about responsive issues. This caused a lot of problems at the end of my project. 
 
 ![Design-Mockup](/media/design_mockup.jpg) 
 
-- This is my first design. I liked the detail and idea of implementing a clickable list of items on the homepage, I also added a large selection of navigation items as at this point my scope was much larger. 
+- This is my first design. I liked the detail and idea of implementing a clickable list of items on the homepage. I thought this would be eye-catching and tempt the user to navigate to the products page. At I also added a large selection of navigation items as at this point my scope was much larger. 
 
 # Phase Two
 
-- My second design involved the removal of the list as this did not respond well on mobile devices and I did not have time to make this work during my project process. I also got rid of some of my nav items as I felt there was too much and it could be reduced down to just 4 tabs to accomdate all my items.
+- My second design involved the removal of the list as this did not respond well on mobile devices and due to time constraints I. I also got rid of some of my nav items as I felt there was too much and it could be reduced down to just 4 tabs to accomdate all my items.
 
-![Design-Mockup2](/media/design_mockup.jpg) 
+![Design-Mockup2](/media/design_mockup2.jpg) 
 
 # Phase Three
 
 - My third design involved the removal of the list as this did not respond well on mobile devices and I did not have time to make this work during my project process. I also got rid of some of my nav items as I felt there was too much and it could be reduced down to just 4 tabs to accomdate all my items.
 
 
-![Design-Mockup3](/media/design_mockup.jpg) 
+![Design-Mockup3](/media/design_mockup3.jpg) 
 
 ## Facebook Business Page
 

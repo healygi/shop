@@ -1,9 +1,11 @@
-from django.shortcuts import render, get_object_or_404
+from django.http import Http404
+from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from checkout.models import Order
 from .models import UserProfile, WishListItem
 from .forms import UserProfileForm
+from products.models import Product
 
 
 @login_required
@@ -12,7 +14,7 @@ def profile(request):
     profile = get_object_or_404(UserProfile, user=request.user)
 
     try:
-        wishlist = WishListItem.objects.filter(user=request.user.id)[0]
+        wishlist = WishListItem.objects.filter(user=request.user)[0]
     except IndexError:
         wishlist_items = None
     else:
@@ -42,6 +44,7 @@ def profile(request):
 
     return render(request, template, context)
 
+
 def add_to_wishlist(request, product_id):
     """
     Adds the product to the users Wishlist.
@@ -49,11 +52,11 @@ def add_to_wishlist(request, product_id):
         request (the request object)
         product_id (the product in question)
     Returns:
-        the MyStepUp profile page
+        the profile page
     """
     product = get_object_or_404(Product, pk=product_id)
     try:
-        wishlistitem = get_object_or_404(WishListItem, user=request.user.id)
+        wishlistitem = get_object_or_404(WishListItem, user=request.user)
 
     except Http404:
         wishlistitem = WishListItem.objects.create(user=request.user)
@@ -78,7 +81,7 @@ def remove_from_wishlist(request, product_id):
         A redirect to the previously viewed page
     """
     product = get_object_or_404(Product, pk=product_id)
-    wishlistitem = get_object_or_404(WishListItem, user=request.user.id)
+    wishlistitem = get_object_or_404(WishListItem, user=request.user)
     if product in wishlistitem.product.all():
         wishlistitem.product.remove(product)
         messages.info(
