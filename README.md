@@ -338,21 +338,21 @@ If I had more time and was not in bad health, I would have liked to implement ma
 - I had implemented a 'workout' image/logo on the homepage but changed this before submission as it did not look good or go with the flow on a mobile device. Users are more likely to be looking at this site via mobiles so I removed this. I did keep it in my Facebook Business Page as I thought it looked good and more professional and did not disturb the flow. 
 
 # Phase One
-- I created multiple mock-ups of my site homepage as this is the most important page for the user as it is where they will make the decision to shop or not. I made sure it was minimalistic and had an easy flow. My site changed multiple times due to responsive issues, thus before submission I changed the design again so that it would display well on all screens. In hindsight, I would have my first design done on a mobile so that I wouldnt not have to worry about responsive issues. This caused a lot of problems at the end of my project. 
+- I created multiple mock-ups of my site homepage as this is the most important page for the user as it is where they will make the decision to shop or not. I made sure it was minimalistic and had an easy flow. My site changed multiple times due to responsiveness issues, thus before submission I changed the design again so that it would display well on all screens. In hindsight, I would have created my first design on a mobile so that I would not have to worry about responsive issues. This caused a lot of problems at the end of my project.
 
 ![Design-Mockup](/media/design_mockup.jpg) 
 
-- This is my first design. I liked the detail and idea of implementing a clickable list of items on the homepage. I thought this would be eye-catching and tempt the user to navigate to the products page. At I also added a large selection of navigation items as at this point my scope was much larger. 
+- This is my first design. I followed the boiler plate CI Boutique Ado, modifying it to suit my store. I added my logo and shop name to the left, with a search bar to filter through products in the center and my basket icon set to the right hand corner. I added a 'workout' image to reflect the idea behind the site which is - to get active and exercise! I also thought having a staple image would make my site recognizable, from a marketing view point to have this flow would be userful and marketable.  I liked the idea of implementing a clickable list of items on the homepage. I thought this would be eye-catching and tempt the user to navigate to the products page. I also added a large selection of navigation items in the header of my website as at this point my scope was much larger. I added social media links within the footer so the user can naviagte more freely to GymGeeks different social media pages. 
 
 # Phase Two
 
-- My second design involved the removal of the list as this did not respond well on mobile devices and due to time constraints I. I also got rid of some of my nav items as I felt there was too much and it could be reduced down to just 4 tabs to accomdate all my items.
+- My second design involved the removal of the list as this did not respond well on mobile devices and could not be fixed due to time constraints and scope. I also got rid of some of my nav items as I felt there was too much and it could be reduced down to just 4 tabs to accomdate all my items. I believed having 4 well working tabs was better than having 8 half-working tabs.
 
 ![Design-Mockup2](/media/design_mockup2.jpg) 
 
 # Phase Three
 
-- My third design involved the removal of the list as this did not respond well on mobile devices and I did not have time to make this work during my project process. I also got rid of some of my nav items as I felt there was too much and it could be reduced down to just 4 tabs to accomdate all my items.
+- My third design involved the removal of the workout image as I did not like how it looked on mobile devices and I did not have time to play around with a new design for mobile. I took a 'one-size' fits all approach to the remainder of my design, taking a minimalist approach so the user would not be overwhelmed and easily navigate through this e-commerce site. 
 
 
 ![Design-Mockup3](/media/design_mockup3.jpg) 
@@ -362,6 +362,12 @@ If I had more time and was not in bad health, I would have liked to implement ma
 ![Facebook-Mockup](/media/facebook.png) 
 
 - I implemented a mock up of a Facebook business page. I attempted to create an account numerous times but it kept getting shut down due to Facebook security so in the end I created a mock up in Canva to envision what GymGeeks business page would look like. I placed the logo 'workout' stamp as the icon/slogan and implemented it on the image of Facebook posts. I implemented it as such to keep the flow of the page and my site, linking it with the 'workout' stamp. I thought if it was used and placed regularly it would make my site more marketable and recognizsable. I envision this page to be a hub for community amongst GymGeek users. For users to find gym offers, subscriptions, classes or active-wear deals.  
+
+## Mail Chimp Newsletter 
+
+- I implemented a pop-up mailchimp newsletter sign-up to action itself when the user opens the homepage of the site. I implemented GymGeeks logo in this pop-up and asked for 'email.' The less forms to fill out the more likely a user will fill out this form. I created this pop-up to increase my users/following. This is a useful approach in the marketing world. 
+
+![Newsletter-signup](/media/newsletter_signup.png) 
 
 ## Final Project
 
@@ -395,4 +401,4 @@ I took the following steps to begin my deployment:
 - Thank you to friends and family for putting up with me through the last rounds of this diploma and helping me through tough times. 
 - Thank you to my mentor for his guidance. 
 - Thank you to tutor support for lending me a hand.
-- Thank you to student care for your kindess.
+- Thank you to student care for your kindness.
