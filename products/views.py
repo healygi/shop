@@ -70,16 +70,18 @@ def product_detail(request, product_id):
 
     product = get_object_or_404(Product, pk=product_id)
     wishlist_exists = False
+    wishlist = None
 
-    try:
-        wishlistitem = get_object_or_404(WishListItem, user=request.user)
-    except Http404:
-        wishlistitem = {}
-        wishlist = None
-    else:
-        wishlist = wishlistitem.product.all()
-        if product in wishlist:
-          wishlist_exists = True
+    if request.user.is_authenticated:
+        try:
+            wishlistitem = get_object_or_404(WishListItem, user=request.user)
+        except Http404:
+            wishlistitem = {}
+            wishlist = None
+        else:
+            wishlist = wishlistitem.product.all()
+            if product in wishlist:
+                wishlist_exists = True
     
     context = {
         'product': product,
