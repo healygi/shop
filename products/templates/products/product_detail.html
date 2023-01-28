@@ -72,14 +72,16 @@
                                     <!-- If user is logged in and has item in wishlist, this is visible on the button -->
                                     {% if request.user.is_authenticated %}
                                         {% if wishlist_exists %}
-                                            <a href="{% url 'remove_from_wishlist' product.id %}" aria-label="Remove product from Wishlist" class="w-100 btn inline btn-grey"><i class="fas fa-heart"></i> Remove from Wishlist</a>
+                                            <a href="{% url 'remove_from_wishlist' product.id %}" aria-label="Remove product from Wishlist" class="w-100 btn inline btn-grey" style="font-size: 13px;
+                                            color: dimgray;"><i class="fas fa-heart"></i> Remove from Wishlist</a>
                                         {% else %}
-                                            <a href="{% url 'add_to_wishlist' product.id %}" aria-label="Add product to Wishlist" class="w-500 btn inline btn-grey"><i class="far fa-heart"></i> Add to Wishlist</a>
+                                            <a href="{% url 'add_to_wishlist' product.id %}" aria-label="Add product to Wishlist" class="w-500 btn inline btn-grey" style="font-size: 13px;
+                                            color: dimgray;"><i class="far fa-heart"></i> Add to Wishlist</a>
                                         {% endif %}
                                     {% else %}
                                     <!-- Prompt the user to sign in if not signed in -->
-                                        <a href="{% url 'account_login' %}" aria-label="Sign In" class="w-100 btn inline btn-grey"><i class="far fa-heart"></i> Sign In</a>
-                                        <p class="text-center py-2">to add item to Wishlist.</p>
+                                        <a href="{% url 'account_login' %}" aria-label="Sign In" class="w-100 btn inline btn-grey" style="font-size: 13px;
+                                        color: dimgray;"><i class="far fa-heart"></i> Add me to your Wishlist!</a>
                                     {% endif %}
                                 </div>
                             </div>
