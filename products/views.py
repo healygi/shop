@@ -1,13 +1,13 @@
 from django.http import Http404
-from django.shortcuts import render, redirect, reverse, get_object_or_404
+from django.shortcuts import render, redirect, reverse, get_object_or_404, HttpResponse
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
-from django.db.models import Q
+from django.db.models import Q, F
 from django.db.models.functions import Lower
 
 from profiles.models import WishListItem
-from .models import Product, Category
-from .forms import ProductForm
+from .models import Product, Category, Review
+from .forms import ReviewForm, ProductForm
 
 
 def all_products(request):
@@ -82,10 +82,41 @@ def product_detail(request, product_id):
             wishlist = wishlistitem.product.all()
             if product in wishlist:
                 wishlist_exists = True
+
+    reviews = Review.objects.filter(product=product)
+
+    if request.method == 'POST':
+
+        review_form = ReviewForm(data=request.POST or None)
+
+        if request.user.is_authenticated and review_form.is_valid():
+
+            review_form.instance.user = request.user
+            review = review_form.save(commit=False)
+            review.product = product
+            review.save()
+            messages.success(
+                request, (
+                    f'Thank you for reviewing "{product.name[:25]}.."! '
+                    'You can now view and remove it below.'
+                )
+            )
+
+            if product.rating:
+                product.rating = (product.rating + review.product_rating) / 2
+            else:
+                product.rating = review.product_rating
+            product.save()
+
+            return redirect(reverse('product_detail', args=[product.id]))
+    else:
+        review_form = ReviewForm()
     
     context = {
         'product': product,
         'wishlist': wishlist,
+        'review_form': review_form,
+        'reviews': reviews,
     }
 
     return render(request, 'products/product_detail.html', context)
@@ -156,3 +187,32 @@ def delete_product(request, product_id):
     product.delete()
     messages.success(request, 'Product deleted!')
     return redirect(reverse('products'))
+
+
+def delete_review(request, review_id):
+    """
+    Removes a product on the site
+    Args:
+        request (object)
+        product_id (to get instance of the product to edit)
+    Returns:
+        the delete product page with the form and context.
+    """
+
+    review = get_object_or_404(Review, pk=review_id)
+    product = review.product
+
+    try:
+        review.delete()
+        messages.success(
+            request, (
+                f'Your review "{review.title}" of {review.product} '
+                'is now deleted'
+            )
+        )
+
+    except Exception as e:  # pylint: disable=broad-except, invalid-name
+        messages.error(request, f'Error removing review: {e}')
+        return HttpResponse(status=500)
+
+    return redirect(reverse('product_detail', args=[product.id]))

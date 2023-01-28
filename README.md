@@ -201,6 +201,29 @@ The site consists of 11 pages: Home, register, sign-in, products (x4 categories 
 
  - I labelled them with MoSCow prioritization so that this allowed me to prioritise certain tasks to implement over less important tasks depending on time and scope. 
 
+
+# Data Models
+
+The following models have been used to populate the database and for the site to function as it should:
+
+* **User** - the built in Django User model, facilitates the users basic information
+
+* **Category** - the category in which the product is placed
+
+* **Brand** - the brand of the product
+
+* **Product** - the model for the product itself and its details
+
+* **Review** - a model for users to give the product a rating and a review
+
+* **Order** - a users successful purchase leads to an instance of the Order model being created, storing delivery and user data
+
+* **OrderLineItem** - a model holding the product information for a single product, binding the product model together with the order
+
+* **UserProfile** - the model storing the users product and order information
+
+* **WishListItem** - the customer has the option to save an item, which will then appear in their wish list on the My StepUp page
+
 # Testing
 
 ## Manual Testing:

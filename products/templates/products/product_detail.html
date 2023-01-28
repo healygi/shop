@@ -129,6 +129,70 @@
                 </div>
             </div>
         </div>
+         <!-- Reviews section -->
+         <div class="row">
+            <div class="col-12 col-md-6 col-lg-4 offset-lg-2">
+                <h3 class="lead text-orange">Product Reviews</h3>
+                {% if reviews %}
+                    <section class="review-box mb-3">
+                        <!-- Loop over the reviews -->
+                        {% for review in reviews %}
+                            <div class="row">
+                                <div class="col-6">
+                                    <p class="text-orange">{{ review.title }}</p>
+                                </div>
+                                <div class="col-6">
+                                    <!-- Product rating is updated for each review -->
+                                    <p class="text-orange text-right"><i class="fas fa-star"></i> {{ review.product_rating }}/5</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <!-- If user has removed their account, "Account removed" will be displayed instead of the users username -->
+                                    <small class="text-muted">{% if not review.user == None %}{{ review.user }}{% else %}Account removed{% endif %} | {{ review.date_created }}</small>
+                                </div>
+                            </div>
+                            <p>{{ review.user_review }}</p>
+                            <!-- If user is admin, buttons to remove all reviews are visible. If logged in, users can remove their own.
+                            If not logged in, users don't see any delete buttons. -->
+                            {% if request.user == review.user or request.user.is_superuser %}
+                            <button type="button" class="btn product-edit-link text-danger" data-toggle="modal" data-target="#deleteReviewModal{{ review.id }}">
+                                Delete Review
+                            </button>
+                            {% endif %}
+                            <hr>
+                            <!-- Modal to confirm review deletion -->
+                            {% include 'products/includes/delete_review_modal.html' %}
+                        {% endfor %}
+                    </section>
+                {% else %}
+                <!-- If no reviews display this -->
+                    <p>No reviews for this product yet.</p>
+                    <hr>
+                {% endif %}
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                {% if request.user.is_authenticated %}
+                <!-- Review form -->
+                    <section class="review-form">
+                        {% if reviews %}
+                        <h3 class="lead text-orange">Review this product</h3>
+                        {% else %}
+                        <h3 class="lead text-orange">Be the first to review this product</h3>
+                        {% endif %}
+                        <form method="POST" action="{% url 'product_detail' product.id %}">
+                            {% csrf_token %}
+                            {{ review_form|crispy }}
+                            <button class="w-100 btn btn-orange" type="submit">Post Review</button>
+                        </form>
+                    </section>
+                {% else %}
+                    <h4 class="lead">Please <a href="{% url 'account_login' %}" class="font-weight-bold">sign in</a> to post a review.</h4>
+                {% endif %}
+            </div>
+        </div>
+        <!-- Delete product modal -->
+        {% include 'products/includes/delete_product_modal.html' %}
     </div>
     <footer class="bg-black text-center text-white footer fixed-bottom">
         <!-- Grid container -->
