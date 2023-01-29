@@ -183,7 +183,7 @@
                         <form method="POST" action="{% url 'product_detail' product.id %}">
                             {% csrf_token %}
                             {{ review_form|crispy }}
-                            <button class="w-100 btn btn-orange" type="submit">Post Review</button>
+                            <button class="w-100 btn btn-orange" type="submit" style="background-color: black; color: white;">Post Review</button>
                         </form>
                     </section>
                 {% else %}
@@ -191,37 +191,7 @@
                 {% endif %}
             </div>
         </div>
-        <!-- Delete product modal -->
-        {% include 'products/includes/delete_product_modal.html' %}
     </div>
-    <footer class="bg-black text-center text-white footer fixed-bottom">
-        <!-- Grid container -->
-        <div class="container" style="padding-top: 5px;">
-             <!-- <p>GymGeeks &nbsp;<i class="fas fa-dumbbell"></i></p> -->
-          <!-- Section: Social media -->
-          
-            <!-- Facebook -->
-            <a class="btn btn-outline-light btn-floating m-1 btn-sm" href="https://www.facebook.com/" target="_blank" role="button"
-              ><i class="fab fa-facebook-f"></i
-            ></a>
-      
-            <!-- Twitter -->
-            <a class="btn btn-outline-light btn-floating m-1 btn-sm" href="https://twitter.com/" target="_blank" role="button"
-              ><i class="fab fa-twitter"></i
-            ></a>
-      
-            <!-- Instagram -->
-            <a class="btn btn-outline-light btn-floating m-1 btn-sm" href="https://www.instagram.com/" target="_blank" role="button"
-              ><i class="fab fa-instagram"></i
-            ></a>
-            
-            <p>Keep up to date with all our latest offers</p>
-            <a href="#" target="_blank"><i class="fab fa-facebook-square"></i> Follow us on Facebook!</a>
-
-         
-             <!-- <h6>Location &nbsp;<i class="fas fa-location-arrow fa-xs"></i></h6>1 Peel Road, Golden Lane, Dublin 8, D08A4B3</p>
-        </div> -->
-      </footer>
 {% endblock %}
 
 {% block postloadjs %}
