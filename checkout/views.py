@@ -127,12 +127,12 @@ def checkout(request):
         try:
             wishlistitem = get_object_or_404(
                 WishListItem, user=request.user
-            )
-           except Exception:
+            )  
+        except Exception:
                wishlistitem = None
         # Attach the user's profile to the order
-           order.user_profile = profile
-           order.save()
+        order.user_profile = profile
+        order.save()
 
     if not stripe_public_key:
         messages.warning(request, 'Stripe public key is missing. \
