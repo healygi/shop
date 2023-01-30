@@ -501,6 +501,8 @@ If I had more time and was not in bad health, I would have liked to implement ma
 
 - I implemented a pop-up mailchimp newsletter sign-up to action itself when the user opens the homepage of the site. I implemented GymGeeks logo in this pop-up and asked for 'email.' The less forms to fill out the more likely a user will fill out this form. I created this pop-up to increase my users/following. This is a useful approach in the marketing world. 
 
+- Each subscriber is registered in gymgeeks mail chimp account, thus these emails can be used for marketing purposes. 
+
 ![Newsletter-signup](/media/newsletter_signup.png) 
 
 ## Final Project
