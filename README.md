@@ -1,7 +1,7 @@
 # GymGeeks
 
   
-![home page](/media/GymGeeks.jpg)) 
+![home page](/media/GymGeeksHome.jpg)) 
 
 
 GymGeeks is an online gym shop for all your gym essentials - from gym equipment to activewear to supplements to exercise kits. A user can select from a wide range of gym equipment, activewear, supplements and exercise kits - that they can buy for themselves or gift to loved ones who loves to exercise. GymGeek kits are handcrafted specifically for individuals with different hobbies. For example, there is a running kit, boxercise kit etc to cater to a users specific interest. GymGeeks appeals to a wide variety of people - people who want to invest in good quailty active wear, people who want to buy gym equipment and people who want to gift their loved ones or themselves a fun active kit. 
@@ -109,10 +109,14 @@ GymGeeks is an online gym shop for all your gym essentials - from gym equipment 
    - They are prompted to sign up in order to access these features. 
    - They can leave an enquiry through the contact form. 
 
-- The Wishlist
+- Wishlist
 
  - Users can add products to their Wishlist, if they do not wish to purchase items straight away. This is located at the top of the users profile page. 
  - The products will remain in the users Wishlist until they have purchased the item or removed it from the list.
+
+ ![wishList](/media/wishList.jpg) 
+
+![wishList](/media/add_wishlist.jpg) 
  
 - 404 page
 
@@ -120,6 +124,19 @@ GymGeeks is an online gym shop for all your gym essentials - from gym equipment 
  - To see this page please use this url - https://gymgeeks.herokuapp.com/test
 
  ![404](/media/404.jpg) 
+
+- Contact Form
+
+ - A user can open up the contact form by clicking on the "Contact Us" tab in the nav bar.
+ - If the user is logged in, the email field is prepopulated with the user's email address.
+ - The form contains a drop down menu where the user can select the type of enquiry from a list so that the site owner knows what the enquiry is about.
+ - The user must fill out all the fields that have an Asterix. If the form is submitted with any of these fields left blank or with just whitespace then an error message will appear above that particular field, notifying the user of the issue.
+ - When the form is submitted, the user receives an email confirmation of their enquiry so that they have a record of it.
+
+  ![contact_us](/media/contact_us.jpg) 
+
+
+  ![contact_us](/media/enquiry_type.jpg) 
 
 - Stripe
 
