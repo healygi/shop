@@ -1,7 +1,7 @@
 # GymGeeks
 
   
-![home page](/media/GymGeeksHome.jpg)) 
+![home page](/media/GymGeeksHome.jpg)
 
 
 GymGeeks is an online gym shop for all your gym essentials - from gym equipment to activewear to supplements to exercise kits. A user can select from a wide range of gym equipment, activewear, supplements and exercise kits - that they can buy for themselves or gift to loved ones who loves to exercise. GymGeek kits are handcrafted specifically for individuals with different hobbies. For example, there is a running kit, boxercise kit etc to cater to a users specific interest. GymGeeks appeals to a wide variety of people - people who want to invest in good quailty active wear, people who want to buy gym equipment and people who want to gift their loved ones or themselves a fun active kit. 
@@ -21,7 +21,7 @@ GymGeeks is an online gym shop for all your gym essentials - from gym equipment 
    - The logo 'GymGeeks' is also a clickable link to the homepage. This allows for easy navigation when the user views the site on a mobile or tablet device. 
 
   
-![nav bar](/media/navbar2.png)) 
+![nav bar](/media/navbar2.png)
 
 - Home
 
@@ -32,8 +32,7 @@ GymGeeks is an online gym shop for all your gym essentials - from gym equipment 
 - Footer
 
    - The footer section includes links to relevant social media sites for GymGeeks. The links will open to a new tab to allow easy navigation for the user. 
-   - The footer is valuable to the user as it encourages them to keep connected via social media, encouraging community among users. 
-   - The footer sticks to the bottom of the page and is located on every page of this site. 
+   - The footer is valuable to the user as it encourages them to keep connected via social media, encouraging community among users.
 
    
 ![footer](/media/footer.png) 
@@ -103,9 +102,8 @@ GymGeeks is an online gym shop for all your gym essentials - from gym equipment 
    - If a user signs up for an account they have access to their user profile. 
    - Here they can view their product history, delivery details and what items are in their wishlist. 
    - They can add products to their wishlist and delete items from their wishlist.
-   - They can leave reviews on products and rate them out of 5. 
+   - They can leave reviews on products, rate them out of 5 and delete their own review.
    - They can leave an enquiry through the contact form. 
-   - They have full CRUD functionality.
 
    3. Non-Account Owners
    - Non-account owners can view the site and its products.
@@ -120,7 +118,7 @@ GymGeeks is an online gym shop for all your gym essentials - from gym equipment 
 
  ![wishList](/media/wishList.jpg) 
 
-![wishList](/media/add_wishlist.jpg) 
+ ![wishList](/media/add_wishlist.jpg) 
  
 - 404 page
 
@@ -172,6 +170,7 @@ GymGeeks is an online gym shop for all your gym essentials - from gym equipment 
 - Google Chrome Dev Tools for inspection during development to check reponsiveness and contrast.
 - Favicon.io for the favicon
 - W3C Markup Validation Service
+- Lucid Charts for design mock-ups & dataschema
 
 # Agile Development Methology:
 
