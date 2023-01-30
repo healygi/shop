@@ -45,11 +45,11 @@ class ContactUs(View):
             cust_email = contact_form.instance.email
             subject = contact_form.instance.enquiry_type
             subject = render_to_string(
-                '/contact/confirmation_emails/confirmation_email_subject.txt',
+                'contact/confirmation_emails/confirmation_email_subject.txt',
                 {'subject': subject})
             message = contact_form.instance.message
             message = render_to_string(
-                '/contact/confirmation_emails/confirmation_email_body.txt',
+                'contact/confirmation_emails/confirmation_email_body.txt',
                 {'cust_name': cust_name, 'message': message}
             )
             send_mail(
