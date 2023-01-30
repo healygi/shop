@@ -39,11 +39,5 @@ class WishListItem(models.Model):
     """
     A model that keeps track of users wish list items.
     """
-    user = models.OneToOneField(
-        User,
-        on_delete=models.CASCADE
-    )
-    product = models.ManyToManyField(
-        Product,
-        blank=True
-    )
+    user = models.OneToOneField(User, on_delete=models.CASCADE)
+    product = models.ManyToManyField(Product, blank=True)

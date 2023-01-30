@@ -81,9 +81,27 @@ GymGeeks is an online gym shop for all your gym essentials - from gym equipment 
 
 - Product Management 
 
-   - If the user is admin, they can login and edit the site via 'product management.' 
-   - This is a neat form where the user can add or update their products.
-   - This allows ease of access and flow for admins instead of using the Django back end framework. 
+  1. Super User
+   - If the user is a Super User, they can login and edit the site via 'Product Management' link under 'My Account' in the nav bar.  
+   - This is a neat form where the admin can add, edit or delete their products.
+   - The admin here has full CRUD functionalities.
+   - The admin can also see user enquires here from customers.
+   - They can read and delete the enquires listed in a table.
+   - This allows ease of access and flow for admins instead of using the Django backend framework. 
+
+   2. Account Owners
+   - If a user signs up for an account they have access to their user profile. 
+   - Here they can view their product history, delivery details and what items are in their wishlist. 
+   - They can add products to their wishlist and delete items from their wishlist.
+   - They can leave reviews on products and rate them out of 5. 
+   - They can leave an enquiry through the contact form. 
+   - They have full CRUD functionality.
+
+   3. Non-Account Owners
+   - Non-account owners can view the site and its products.
+   - They cannot leave reviews, rate products or add items to a wishlist.
+   - They are prompted to sign up in order to access these features. 
+   - They can leave an enquiry through the contact form. 
 
 - 404 page
 
@@ -210,7 +228,7 @@ The following models have been used to populate the database and for the site to
 
 * **Category** - the category in which the product is placed
 
-* **Brand** - the brand of the product
+* **Contact** - a model for users to contact admin with a query
 
 * **Product** - the model for the product itself and its details
 
@@ -222,7 +240,7 @@ The following models have been used to populate the database and for the site to
 
 * **UserProfile** - the model storing the users product and order information
 
-* **WishListItem** - the customer has the option to save an item, which will then appear in their wish list on the My StepUp page
+* **WishListItem** - the customer has the option to save an item, which will then appear in their wish list on their GymGeek user profile
 
 # Testing
 
@@ -379,6 +397,12 @@ If I had more time and was not in bad health, I would have liked to implement ma
 
 
 ![Design-Mockup3](/media/design_mockup3.jpg) 
+
+# Database Schema for models - GymGeeks
+
+- Below is a schema of models used in this application, created with Lucidchart
+
+![Database_schema](/media/Database_Schema_GymGeeks.png) 
 
 ## Facebook Business Page
 

@@ -47,34 +47,12 @@ class Review(models.Model):
 
         ordering = ['id']
 
-    user = models.ForeignKey(
-        User,
-        null=True,
-        on_delete=models.SET_NULL
-    )
-    product = models.ForeignKey(
-        Product,
-        on_delete=models.CASCADE
-    )
-    product_rating = models.IntegerField(
-        choices=RATING_CHOICES,
-        default=5
-    )
-    title = models.CharField(
-        verbose_name=_('Review Title'),
-        max_length=25,
-        null=False,
-        blank=False
-    )
-    user_review = models.TextField(
-        verbose_name=_('User Review'),
-        max_length=250,
-        null=False,
-        blank=False
-    )
-    date_created = models.DateTimeField(
-        auto_now_add=True
-    )
+    user = models.ForeignKey(User,null=True,on_delete=models.SET_NULL)
+    product = models.ForeignKey(Product,on_delete=models.CASCADE)
+    product_rating = models.IntegerField(choices=RATING_CHOICES,default=5)
+    title = models.CharField(verbose_name=_('Review Title'),max_length=25,null=False,blank=False)
+    user_review = models.TextField(verbose_name=_('User Review'),max_length=250,null=False,blank=False)
+    date_created = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
         """
