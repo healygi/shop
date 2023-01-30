@@ -138,6 +138,18 @@ GymGeeks is an online gym shop for all your gym essentials - from gym equipment 
 
   ![contact_us](/media/enquiry_type.jpg) 
 
+- Product Review
+
+ - A logged in user can leave a review on a product.
+ - They do not have full CRUD functionality due to time constraints I could not implemenent this - but they can delete their review and a super user can also delete their review.
+ - They can rate the product out of 5.
+ - If a user does not have an account they are prompted to sign up to leave a review. 
+ - Reviews are visible to everyone. 
+
+ ![product_review](/media/product_review.jpg) 
+
+ ![product_review](/media/sign-in-review.jpg) 
+
 - Stripe
 
  - I implemented Stripe in test mode. Below are the credentials that can be used to make a 'fake' payment and test that all systems are working as they should.
