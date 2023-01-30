@@ -441,6 +441,33 @@ If I had more time and was not in bad health, I would have liked to implement ma
 
 ![Design-Mockup3](/media/design_mockup3.jpg) 
 
+# Mobile Design 
+
+- As I said above, in hindsight I should have designed my site with mobile design first as my desktop design caused a lot of issues in the end. I decided to stay minimalist and keep both desktop and mobile simple so that it would not interfer with responsiveness. Having a functioning, responsive site was my main goal for this site. 
+
+## Phase One
+
+- After I created my first desktop design I viewed this on mobile in dev tools. I found the layout on mobile was too crowded. Although I liked the idea of a clickable list and workout logo image, overall it was not user friendly and so these did not make it to the second phase. 
+
+![Design-Mockup1](/media/design_1.jpg) 
+
+## Phase One
+
+- In this phase of design I got rid of the list put kept the image. I found the image looked out of place and made the site look a little cheap and unsophisticated and so this did not make it to the final mobile design.
+
+![Design-Mockup2](/media/design_2.jpg) 
+
+## Phase Three
+
+- As I said above - I took a 'one-size' fits all approach to the remainder of my design, taking a minimalist approach so the user would not be overwhelmed and easily navigate through this e-commerce site. 
+
+![Design-Mockup3](/media/design_3.jpg) 
+
+![Design-Mockup3](/media/mobile.jpg) 
+
+
+
+
 ## Database Schema for models - GymGeeks
 
 - Below is a schema of models used in this application, created with Lucidchart.
