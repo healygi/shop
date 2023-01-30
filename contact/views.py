@@ -45,11 +45,11 @@ class ContactUs(View):
             cust_email = contact_form.instance.email
             subject = contact_form.instance.enquiry_type
             subject = render_to_string(
-                'contact/confirmation_emails/confirmation_email_subject.txt',
+                '/contact/confirmation_emails/confirmation_email_subject.txt',
                 {'subject': subject})
             message = contact_form.instance.message
             message = render_to_string(
-                'contact/confirmation_emails/confirmation_email_body.txt',
+                '/contact/confirmation_emails/confirmation_email_body.txt',
                 {'cust_name': cust_name, 'message': message}
             )
             send_mail(
@@ -81,7 +81,7 @@ class ContactUs(View):
 class Enquiries(LoginRequiredMixin, UserPassesTestMixin, generic.ListView):
     """ This view is used to display all enquiries """
     model = Contact
-    template_name = 'contact/enquiries_dashboard.html'
+    template_name = '/contact/enquiries_dashboard.html'
 
     def test_func(self):
         """
@@ -103,7 +103,7 @@ class EnquiryDetail(
         LoginRequiredMixin, UserPassesTestMixin, generic.DetailView):
     """ This view is used to display selected enquiry detail """
     model = Contact
-    template_name = 'contact/enquiry_detail.html'
+    template_name = '/contact/enquiry_detail.html'
 
     def test_func(self):
         """
@@ -119,7 +119,7 @@ class DeleteEnquiry(
     This view is used to allow the superuser to delete an enquiry
     """
     model = Contact
-    template_name = 'contact/delete_enquiry.html'
+    template_name = '/contact/delete_enquiry.html'
     success_message = "Enquiry deleted successfully"
     success_url = reverse_lazy('enquiries')
 
