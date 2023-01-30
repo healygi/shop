@@ -123,8 +123,8 @@ def checkout(request):
 
         if request.user.is_authenticated:
         # pylint: disable=no-member
-           profile = UserProfile.objects.get(user=request.user)
-           try:
+         profile = UserProfile.objects.get(user=request.user)
+        try:
             wishlistitem = get_object_or_404(
                 WishListItem, user=request.user
             )

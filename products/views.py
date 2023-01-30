@@ -1,5 +1,5 @@
 from django.http import Http404
-from django.shortcuts import render, redirect, reverse, get_object_or_404, HttpResponse
+from django.shortcuts import render, redirect, reverse, get_object_or_404, HttpResponse  # noqa: E501
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from django.db.models import Q, F
@@ -111,7 +111,6 @@ def product_detail(request, product_id):
             return redirect(reverse('product_detail', args=[product.id]))
     else:
         review_form = ReviewForm()
-    
     context = {
         'product': product,
         'wishlist': wishlist,

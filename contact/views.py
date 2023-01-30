@@ -34,10 +34,6 @@ class ContactUs(View):
         )
 
     def post(self, request):
-        """
-        This method is called when a POST request is made to the view
-        via the contact form
-        """
         contact_form = ContactForm(data=request.POST)
 
         if contact_form.is_valid():
@@ -79,7 +75,7 @@ class ContactUs(View):
 
 
 class Enquiries(LoginRequiredMixin, UserPassesTestMixin, generic.ListView):
-    """ This view is used to display all enquiries """
+    """ display all enquiries """
     model = Contact
     template_name = 'contact/enquiries_dashboard.html'
 
@@ -101,7 +97,7 @@ class Enquiries(LoginRequiredMixin, UserPassesTestMixin, generic.ListView):
 
 class EnquiryDetail(
         LoginRequiredMixin, UserPassesTestMixin, generic.DetailView):
-    """ This view is used to display selected enquiry detail """
+    """  display selected enquiry detail """
     model = Contact
     template_name = 'contact/enquiry_detail.html'
 
@@ -116,7 +112,7 @@ class EnquiryDetail(
 class DeleteEnquiry(
         LoginRequiredMixin, UserPassesTestMixin, generic.DeleteView):
     """
-    This view is used to allow the superuser to delete an enquiry
+     superuser to delete an enquiry
     """
     model = Contact
     template_name = 'contact/delete_enquiry.html'
@@ -124,18 +120,10 @@ class DeleteEnquiry(
     success_url = reverse_lazy('enquiries')
 
     def test_func(self):
-        """
-       Ensure only superuser can edit service details
-        """
         if self.request.user.is_superuser:
             return True
 
     def delete(self, request, *args, **kwargs):
-        """
-        This function is used to display sucess message given
-        SucessMessageMixin cannot be used in generic.DeleteView.
-        Credit: https://stackoverflow.com/questions/24822509/
-        success-message-in-deleteview-not-shown
-        """
+
         messages.success(self.request, self.success_message)
         return super(DeleteEnquiry, self).delete(request, *args, **kwargs)

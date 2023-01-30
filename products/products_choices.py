@@ -1,4 +1,4 @@
-# Choices for ratings made by users on the product detail page
+# Choices for ratings made by users
 RATING_CHOICES = [
     (5, '5'),
     (4, '4'),

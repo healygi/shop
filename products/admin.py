@@ -23,6 +23,7 @@ class CategoryAdmin(admin.ModelAdmin):
         'name',
     )
 
+
 class ReviewAdmin(admin.ModelAdmin):
     """
     Admin class for the Review model.
