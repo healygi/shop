@@ -132,8 +132,9 @@ GymGeeks is an online gym shop for all your gym essentials - from gym equipment 
  - A user can open up the contact form by clicking on the "Contact Us" tab in the nav bar.
  - If the user is logged in, the email field is prepopulated with the user's email address.
  - The form contains a drop down menu where the user can select the type of enquiry from a list so that the site owner knows what the enquiry is about.
- - The user must fill out all the fields that have an Asterix. If the form is submitted with any of these fields left blank or with just whitespace then an error message will appear above that particular field, notifying the user of the issue.
+ - The user must fill out all the fields. If the form is submitted with any of these fields left blank they will be allowed proceed.
  - When the form is submitted, the user receives an email confirmation of their enquiry so that they have a record of it.
+ - The form is submitted to the site owner who can access it when they login to GymGeeks via 'enquries' panel in the dropdown under 'my account' or they can access it through Django Admin. 
 
   ![contact_us](/media/contact_us.jpg) 
 
@@ -386,6 +387,7 @@ The following models have been used to populate the database and for the site to
 - Instead I modified an already existing Facebook Business Page and edited to fit my site using Canva.
 - The product images became hidden under the footer in some views - thus I added a overflow scroll and max-height which prevents this now from occuring.
 - In mobile view the top to move the user to the top of the screen overlaps with go to cart. I found this bug last minute and I was unable to remove it in time.
+- I was unable to implement full CRUD functionality for the user who leaves a review - they should be able to edit their post but all I managed to implement was the ability to create and delete posts. I would have also liked to have implemented that the post would go to the admin first for approval but I did not notice this until a friend pointed it out and by then it was too late. 
 
 ## Marketing 
 
