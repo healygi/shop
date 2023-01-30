@@ -539,4 +539,4 @@ I took the following steps to begin my deployment:
 - Thank you to tutor support for lending me a hand.
 - Thank you to student care for your kindness.
 - Thank you Code insitute for your support and their well detailed and informative Boutique Ado which was the basis for my project.
-- Credit to past Code Insitute students John Venkiah and Ali O'Keefe for inspiration and guidance on models and design -https://aliokeeffe-pp5freshnest-y3iag58zcsc.ws-eu84.gitpod.io/ | https://github.com/johnvenkiah/CI_PP5_John_Venkiah#database
+- Credit to past Code Insitute students John Venkiah and Ali O'Keefe for inspiration and guidance on models and design -https://aliokeeffe-pp5freshnest | https://github.com/johnvenkiah/CI_PP5_John_Venkiah
