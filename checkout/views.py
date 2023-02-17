@@ -120,19 +120,32 @@ def checkout(request):
                 order_form = OrderForm()
         else:
             order_form = OrderForm()
+    if not stripe_public_key:
+        messages.warning(request, 'Stripe public key is missing. \
+            Did you forget to set it in your environment?')
 
-        if request.user.is_authenticated:
+    template = 'checkout/checkout.html'
+    context = {
+        'order_form': order_form,
+        'stripe_public_key': stripe_public_key,
+        'client_secret': intent.client_secret,
+    }
+
+    return render(request, template, context)        
+
+    if request.user.is_authenticated:
         # pylint: disable=no-member
          profile = UserProfile.objects.get(user=request.user)
-        try:
+         try:
             wishlistitem = get_object_or_404(
                 WishListItem, user=request.user
             )  
-        except Exception:
+         except Exception:
                wishlistitem = None
         # Attach the user's profile to the order
-        order.user_profile = profile
-        order.save()
+         order.user_profile = profile
+         order.save()
+
 
     if not stripe_public_key:
         messages.warning(request, 'Stripe public key is missing. \
@@ -159,6 +172,9 @@ def checkout_success(request, order_number):
         profile = UserProfile.objects.get(user=request.user)
         # Attach the user's profile to the order
         order.user_profile = profile
+        for item in order.lineitems.all():
+            if item.product in wishlistitem.product.all():
+                wishlistitem.product.remove(id=item.product.id)
         order.save()
 
     # Save the user's info
@@ -179,10 +195,10 @@ def checkout_success(request, order_number):
     messages.success(request, f'Order successfully processed! \
         Your order number is {order_number}. A confirmation \
         email will be sent to {order.email}.')
-    if wishlistitem:
-        for item in order.lineitems.all():
-            if item.product in wishlistitem.product.all():
-                wishlistitem.product.remove(item.product)
+    # if wishlistitem:
+    #     for item in order.lineitems.all():
+    #         if item.product in wishlistitem.product.all():
+    #             wishlistitem.product.remove(item.product)
 
     if 'bag' in request.session:
         del request.session['bag']

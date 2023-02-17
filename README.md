@@ -288,6 +288,76 @@ The following models have been used to populate the database and for the site to
 
 * **NewsLetterSignUp** - the customer can sign up to GymGeeks using a mail chimp pop-up
 
+## UX Design 
+
+- I implemented UX design when developing my project. I did so by putting myself in the users shoes and designed the site based on their needs. This site is for users interesed in exercise and health. It is targeted towards a user who wants to join a community for improving their fitness but also the ability to purchase active wear and gym equipment/classes - so it is an all in one gym.
+- I viewed other gym and health websites to gain inspriation on what design fits best for this type of website. 
+- I made sure my site was accessible by making sure all text is readable and that there is a right amount of contrast between colours. 
+- I selected the colour pallet yellow, black and white as I thought it reflected strength and agility colours which would be assoicated with fitness and energy. These hard colours are strong and inviting but also smart and serious. 
+- I made sure my site was simple as a design principle for an ease in terms of user experience. 
+- I selected a simple readable, pleasing font to make sure my text was easily and quickly readable. 
+- I provided ease of navigation so that the user can go back and forth between the homepage, browse merchandise, basket/checkout and profile. I also provided the ability for the user to have their own profile so that they can access their purchase history and update their address/contact details. 
+- I created a favicon icon with the intials of my site 'GG'. I used an eyecatching font and stuck with the pallet of my site.
+- I had implemented a 'workout' image/logo on the homepage but changed this before submission as it did not look good or go with the flow on a mobile device. Users are more likely to be looking at this site via mobiles so I removed this. I did keep it in my Facebook Business Page as I thought it looked good and more professional and did not disturb the flow. 
+
+## Color Scheme
+
+- I selected the colour pallet yellow, black, grey and white as I thought it reflected strength and agility colours which would be assoicated with fitness and energy. These hard colours are strong and inviting but also smart and serious. 
+- These colors were also accessible with the rght amount of contrast between colours allowing for good readability. 
+- I took inspiration from this grip sock site https://eos-elite.com/
+
+![Design-Mockup2](/media/color-scheme.png) 
+
+## Typography 
+
+- I choose Lato font due to its round edges and the approachable warmth it gives to the user. It's now one of the most popular fonts on Google font and widely used pretty much everywhere. This typeface is highly used on websites to deliver information directly.
+- I personally liked the light style which gave my site a clean modern look to its headings and body. It has a softer appearabce than Sans and for that reason I considered it more appealing. 
+
+## Design Phase One
+- I created multiple mock-ups of my site homepage - the landing page - as this is the most important page for the user as it is where they will make the decision to shop or not. I made sure it was minimalistic and had an easy flow. My site changed multiple times due to responsiveness issues, thus before submission I changed the design again so that it would display well on all screens. In hindsight, I would have created my first design on a mobile so that I would not have to worry about responsive issues. This caused a lot of problems at the end of my project.
+
+![Design-Mockup](/media/design_mockup.jpg) 
+
+- This is my first design. I followed the boiler plate CI Boutique Ado, modifying it to suit my store. I added my logo and shop name to the left, with a search bar to filter through products in the center and my basket icon set to the right hand corner. I added a 'workout' image to reflect the idea behind the site which is - to get active and exercise! I also thought having a staple image would make my site recognizable, from a marketing view point to have this flow would be userful and marketable.  I liked the idea of implementing a clickable list of items on the homepage. I thought this would be eye-catching and tempt the user to navigate to the products page. I also added a large selection of navigation items in the header of my website as at this point my scope was much larger. I added social media links within the footer so the user can naviagte more freely to GymGeeks different social media pages. 
+
+## Design Phase Two
+
+- My second design involved the removal of the list as this did not respond well on mobile devices and could not be fixed due to time constraints and scope. I also got rid of some of my nav items as I felt there was too much and it could be reduced down to just 4 tabs to accomdate all my items. I believed having 4 well working tabs was better than having 8 half-working tabs.
+
+![Design-Mockup2](/media/design_mockup2.jpg) 
+
+## Design Phase Three
+
+- My third design involved the removal of the workout image as I did not like how it looked on mobile devices and I did not have time to play around with a new design for mobile. I took a 'one-size' fits all approach to the remainder of my design, taking a minimalist approach so the user would not be overwhelmed and easily navigate through this e-commerce site. 
+
+
+![Design-Mockup3](/media/design_mockup3.jpg) 
+
+# Mobile Design 
+
+- As I said above, in hindsight I should have designed my site with mobile design first as my desktop design caused a lot of issues in the end. I decided to stay minimalist and keep both desktop and mobile simple so that it would not interfer with responsiveness. Having a functioning, responsive site was my main goal for this site. 
+
+## Phase One
+
+- After I created my first desktop design I viewed this on mobile in dev tools. I found the layout on mobile was too crowded. Although I liked the idea of a clickable list and workout logo image, overall it was not user friendly and so these did not make it to the second phase. 
+
+![Design-Mockup1](/media/design_1.jpg) 
+
+## Phase One
+
+- In this phase of design I got rid of the list put kept the image. I found the image looked out of place and made the site look a little cheap and unsophisticated and so this did not make it to the final mobile design.
+
+![Design-Mockup2](/media/design_2.jpg) 
+
+## Phase Three
+
+- As I said above - I took a 'one-size' fits all approach to the remainder of my design, taking a minimalist approach so the user would not be overwhelmed and easily navigate through this e-commerce site. 
+
+![Design-Mockup3](/media/design_3.jpg) 
+
+![Design-Mockup3](/media/mobile.jpg) 
+
+
 # Testing
 
 ## Manual Testing:
@@ -411,86 +481,6 @@ Presently and also due to time constraints - GymGeeks marketing stragety would m
 
 If I had more time and was not in bad health, I would have liked to implement mailchimp pop-up so that the user can sign up and recieve GymGeeks newsletter of offers and deals. I would have also marketed the kits better. I think as of now they are lost in the site and there should have been a better technique put in for those kits to be more eye-catching and marketed as a gift. However, I am happy with the marketing stragety that is currently in place. I think with the combination of a facebook business page, a minimal user interface and SEO implementation - this site has enough marketing capabilites to reach the target audience. 
 
-
-
-## UX Design 
-
-- I implemented UX design when developing my project. I did so by putting myself in the users shoes and designed the site based on their needs. This site is for users interesed in exercise and health. It is targeted towards a user who wants to join a community for improving their fitness but also the ability to purchase active wear and gym equipment/classes - so it is an all in one gym.
-- I viewed other gym and health websites to gain inspriation on what design fits best for this type of website. 
-- I made sure my site was accessible by making sure all text is readable and that there is a right amount of contrast between colours. 
-- I selected the colour pallet yellow, black and white as I thought it reflected strength and agility colours which would be assoicated with fitness and energy. These hard colours are strong and inviting but also smart and serious. 
-- I made sure my site was simple as a design principle for an ease in terms of user experience. 
-- I selected a simple readable, pleasing font to make sure my text was easily and quickly readable. 
-- I provided ease of navigation so that the user can go back and forth between the homepage, browse merchandise, basket/checkout and profile. I also provided the ability for the user to have their own profile so that they can access their purchase history and update their address/contact details. 
-- I created a favicon icon with the intials of my site 'GG'. I used an eyecatching font and stuck with the pallet of my site.
-- I had implemented a 'workout' image/logo on the homepage but changed this before submission as it did not look good or go with the flow on a mobile device. Users are more likely to be looking at this site via mobiles so I removed this. I did keep it in my Facebook Business Page as I thought it looked good and more professional and did not disturb the flow. 
-
-## Color Scheme
-
-- I selected the colour pallet yellow, black, grey and white as I thought it reflected strength and agility colours which would be assoicated with fitness and energy. These hard colours are strong and inviting but also smart and serious. 
-- These colors were also accessible with the rght amount of contrast between colours allowing for good readability. 
-- I took inspiration from this grip sock site https://eos-elite.com/
-
-![Design-Mockup2](/media/color-scheme.png) 
-
-## Typography 
-
-- I choose Lato font due to its round edges and the approachable warmth it gives to the user. It's now one of the most popular fonts on Google font and widely used pretty much everywhere. This typeface is highly used on websites to deliver information directly.
-- I personally liked the light style which gave my site a clean modern look to its headings and body. It has a softer appearabce than Sans and for that reason I considered it more appealing. 
-
-## Design Phase One
-- I created multiple mock-ups of my site homepage - the landing page - as this is the most important page for the user as it is where they will make the decision to shop or not. I made sure it was minimalistic and had an easy flow. My site changed multiple times due to responsiveness issues, thus before submission I changed the design again so that it would display well on all screens. In hindsight, I would have created my first design on a mobile so that I would not have to worry about responsive issues. This caused a lot of problems at the end of my project.
-
-![Design-Mockup](/media/design_mockup.jpg) 
-
-- This is my first design. I followed the boiler plate CI Boutique Ado, modifying it to suit my store. I added my logo and shop name to the left, with a search bar to filter through products in the center and my basket icon set to the right hand corner. I added a 'workout' image to reflect the idea behind the site which is - to get active and exercise! I also thought having a staple image would make my site recognizable, from a marketing view point to have this flow would be userful and marketable.  I liked the idea of implementing a clickable list of items on the homepage. I thought this would be eye-catching and tempt the user to navigate to the products page. I also added a large selection of navigation items in the header of my website as at this point my scope was much larger. I added social media links within the footer so the user can naviagte more freely to GymGeeks different social media pages. 
-
-## Design Phase Two
-
-- My second design involved the removal of the list as this did not respond well on mobile devices and could not be fixed due to time constraints and scope. I also got rid of some of my nav items as I felt there was too much and it could be reduced down to just 4 tabs to accomdate all my items. I believed having 4 well working tabs was better than having 8 half-working tabs.
-
-![Design-Mockup2](/media/design_mockup2.jpg) 
-
-## Design Phase Three
-
-- My third design involved the removal of the workout image as I did not like how it looked on mobile devices and I did not have time to play around with a new design for mobile. I took a 'one-size' fits all approach to the remainder of my design, taking a minimalist approach so the user would not be overwhelmed and easily navigate through this e-commerce site. 
-
-
-![Design-Mockup3](/media/design_mockup3.jpg) 
-
-# Mobile Design 
-
-- As I said above, in hindsight I should have designed my site with mobile design first as my desktop design caused a lot of issues in the end. I decided to stay minimalist and keep both desktop and mobile simple so that it would not interfer with responsiveness. Having a functioning, responsive site was my main goal for this site. 
-
-## Phase One
-
-- After I created my first desktop design I viewed this on mobile in dev tools. I found the layout on mobile was too crowded. Although I liked the idea of a clickable list and workout logo image, overall it was not user friendly and so these did not make it to the second phase. 
-
-![Design-Mockup1](/media/design_1.jpg) 
-
-## Phase One
-
-- In this phase of design I got rid of the list put kept the image. I found the image looked out of place and made the site look a little cheap and unsophisticated and so this did not make it to the final mobile design.
-
-![Design-Mockup2](/media/design_2.jpg) 
-
-## Phase Three
-
-- As I said above - I took a 'one-size' fits all approach to the remainder of my design, taking a minimalist approach so the user would not be overwhelmed and easily navigate through this e-commerce site. 
-
-![Design-Mockup3](/media/design_3.jpg) 
-
-![Design-Mockup3](/media/mobile.jpg) 
-
-
-
-
-## Database Schema for models - GymGeeks
-
-- Below is a schema of models used in this application, created with Lucidchart.
-
-![Database_schema](/media/Database_Schema_GymGeeks.png) 
-
 ## Facebook Business Page
 
 ![Facebook-Mockup](/media/facebook.png) 
@@ -504,6 +494,12 @@ If I had more time and was not in bad health, I would have liked to implement ma
 - Each subscriber is registered in gymgeeks mail chimp account, thus these emails can be used for marketing purposes. 
 
 ![Newsletter-signup](/media/newsletter_signup.png) 
+
+## Database Schema for models - GymGeeks
+
+- Below is a schema of models used in this application, created with Lucidchart.
+
+![Database_schema](/media/Database_Schema_GymGeeks.png) 
 
 ## Final Project
 

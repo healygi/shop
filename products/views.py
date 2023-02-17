@@ -191,11 +191,6 @@ def delete_product(request, product_id):
 def delete_review(request, review_id):
     """
     Removes a product on the site
-    Args:
-        request (object)
-        product_id (to get instance of the product to edit)
-    Returns:
-        the delete product page with the form and context.
     """
 
     review = get_object_or_404(Review, pk=review_id)
