@@ -7,9 +7,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 SECRET_KEY = os.environ.get('SECRET_KEY')
 
-# DEBUG = 'DEVELOPMENT' in os.environ
-
-DEBUG = True
+DEBUG = 'DEVELOPMENT' in os.environ
 
 ALLOWED_HOSTS = ['gymgeeks.herokuapp.com', 'localhost']
 
@@ -33,7 +31,6 @@ INSTALLED_APPS = [
     'checkout',
     'profiles',
     'contact',
-
     'crispy_forms',
     'storages',
 ]
