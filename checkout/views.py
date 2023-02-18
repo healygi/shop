@@ -170,11 +170,13 @@ def checkout_success(request, order_number):
 
     if request.user.is_authenticated:
         profile = UserProfile.objects.get(user=request.user)
+        user_wishlist = WishListItem.objects.get(user=request.user)
         # Attach the user's profile to the order
         order.user_profile = profile
         for item in order.lineitems.all():
-            if item.product in wishlistitem.product.all():
-                wishlistitem.product.remove(id=item.product.id)
+            if item.product in user_wishlist.product.all():
+                user_wishlist.product.remove(item.product)
+        user_wishlist.save()
         order.save()
 
     # Save the user's info
