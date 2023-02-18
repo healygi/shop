@@ -35,6 +35,7 @@ def create_or_update_user_profile(sender, instance, created, **kwargs):
 
     instance.userprofile.save()
 
+
 class WishListItem(models.Model):
     """
     A model that keeps track of users wish list items.

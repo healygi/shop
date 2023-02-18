@@ -25,6 +25,5 @@ class WishListItemAdmin(admin.ModelAdmin):
     )
 
 
-
 admin.site.register(UserProfile, UserProfileAdmin)
 admin.site.register(WishListItem, WishListItemAdmin)
