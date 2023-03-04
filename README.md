@@ -343,7 +343,7 @@ The following models have been used to populate the database and for the site to
 
 ![Design-Mockup1](/media/design_1.jpg) 
 
-## Phase One
+## Phase Two
 
 - In this phase of design I got rid of the list put kept the image. I found the image looked out of place and made the site look a little cheap and unsophisticated and so this did not make it to the final mobile design.
 
